@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-14T22:07:08+08:00",
+  "generated_at": "2026-10-14T22:09:24+08:00",
   "history_start_year": 2000,
   "indicators": [
     {
@@ -249,6 +249,40 @@
     }
   ],
   "latest": {
+    "income_annual_nominal": {
+      "indicator_id": "income_annual_nominal",
+      "period": "2025",
+      "value": 5.0,
+      "unit": "%",
+      "frequency": "annual",
+      "kind": "annual_nominal_yoy",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "d153132154a549a78363017ef74ca784:c6529a19138449da88a4ba2b75ff6259",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
+    },
+    "income_annual_value": {
+      "indicator_id": "income_annual_value",
+      "period": "2025",
+      "value": 43377.0,
+      "unit": "元",
+      "frequency": "annual",
+      "kind": "annual_amount",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "d153132154a549a78363017ef74ca784:305bba1e881e413b91f32a06a4be65fd",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
+    },
     "private_investment": {
       "indicator_id": "private_investment",
       "period": "2026-08",
@@ -319,8 +353,8 @@
     },
     "retail_annual_value": {
       "indicator_id": "retail_annual_value",
-      "period": "2026-08",
-      "value": 39824.4,
+      "period": "2025",
+      "value": 501202.4,
       "unit": "亿元",
       "frequency": "annual",
       "kind": "annual_amount",
@@ -329,10 +363,10 @@
       "source_indicator": "d5b51c4a56d646b3b3f00f2c9e31a217:008350880eb14928acc53fe20b295415",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T22:07:08+08:00",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T22:07:08+08:00"
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
     },
     "retail_value": {
       "indicator_id": "retail_value",
@@ -404,6 +438,448 @@
     }
   },
   "history": [
+    {
+      "indicator_id": "income_annual_nominal",
+      "period": "2013",
+      "value": 8.1,
+      "unit": "%",
+      "frequency": "annual",
+      "kind": "annual_nominal_yoy",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "d153132154a549a78363017ef74ca784:c6529a19138449da88a4ba2b75ff6259",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
+    },
+    {
+      "indicator_id": "income_annual_nominal",
+      "period": "2014",
+      "value": 8.0,
+      "unit": "%",
+      "frequency": "annual",
+      "kind": "annual_nominal_yoy",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "d153132154a549a78363017ef74ca784:c6529a19138449da88a4ba2b75ff6259",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
+    },
+    {
+      "indicator_id": "income_annual_nominal",
+      "period": "2015",
+      "value": 7.4,
+      "unit": "%",
+      "frequency": "annual",
+      "kind": "annual_nominal_yoy",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "d153132154a549a78363017ef74ca784:c6529a19138449da88a4ba2b75ff6259",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
+    },
+    {
+      "indicator_id": "income_annual_nominal",
+      "period": "2016",
+      "value": 6.3,
+      "unit": "%",
+      "frequency": "annual",
+      "kind": "annual_nominal_yoy",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "d153132154a549a78363017ef74ca784:c6529a19138449da88a4ba2b75ff6259",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
+    },
+    {
+      "indicator_id": "income_annual_nominal",
+      "period": "2017",
+      "value": 7.3,
+      "unit": "%",
+      "frequency": "annual",
+      "kind": "annual_nominal_yoy",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "d153132154a549a78363017ef74ca784:c6529a19138449da88a4ba2b75ff6259",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
+    },
+    {
+      "indicator_id": "income_annual_nominal",
+      "period": "2018",
+      "value": 6.5,
+      "unit": "%",
+      "frequency": "annual",
+      "kind": "annual_nominal_yoy",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "d153132154a549a78363017ef74ca784:c6529a19138449da88a4ba2b75ff6259",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
+    },
+    {
+      "indicator_id": "income_annual_nominal",
+      "period": "2019",
+      "value": 5.8,
+      "unit": "%",
+      "frequency": "annual",
+      "kind": "annual_nominal_yoy",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "d153132154a549a78363017ef74ca784:c6529a19138449da88a4ba2b75ff6259",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
+    },
+    {
+      "indicator_id": "income_annual_nominal",
+      "period": "2020",
+      "value": 2.1,
+      "unit": "%",
+      "frequency": "annual",
+      "kind": "annual_nominal_yoy",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "d153132154a549a78363017ef74ca784:c6529a19138449da88a4ba2b75ff6259",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
+    },
+    {
+      "indicator_id": "income_annual_nominal",
+      "period": "2021",
+      "value": 8.1,
+      "unit": "%",
+      "frequency": "annual",
+      "kind": "annual_nominal_yoy",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "d153132154a549a78363017ef74ca784:c6529a19138449da88a4ba2b75ff6259",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
+    },
+    {
+      "indicator_id": "income_annual_nominal",
+      "period": "2022",
+      "value": 2.9,
+      "unit": "%",
+      "frequency": "annual",
+      "kind": "annual_nominal_yoy",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "d153132154a549a78363017ef74ca784:c6529a19138449da88a4ba2b75ff6259",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
+    },
+    {
+      "indicator_id": "income_annual_nominal",
+      "period": "2023",
+      "value": 6.1,
+      "unit": "%",
+      "frequency": "annual",
+      "kind": "annual_nominal_yoy",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "d153132154a549a78363017ef74ca784:c6529a19138449da88a4ba2b75ff6259",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
+    },
+    {
+      "indicator_id": "income_annual_nominal",
+      "period": "2024",
+      "value": 5.1,
+      "unit": "%",
+      "frequency": "annual",
+      "kind": "annual_nominal_yoy",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "d153132154a549a78363017ef74ca784:c6529a19138449da88a4ba2b75ff6259",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
+    },
+    {
+      "indicator_id": "income_annual_nominal",
+      "period": "2025",
+      "value": 5.0,
+      "unit": "%",
+      "frequency": "annual",
+      "kind": "annual_nominal_yoy",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "d153132154a549a78363017ef74ca784:c6529a19138449da88a4ba2b75ff6259",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
+    },
+    {
+      "indicator_id": "income_annual_value",
+      "period": "2013",
+      "value": 18311.0,
+      "unit": "元",
+      "frequency": "annual",
+      "kind": "annual_amount",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "d153132154a549a78363017ef74ca784:305bba1e881e413b91f32a06a4be65fd",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
+    },
+    {
+      "indicator_id": "income_annual_value",
+      "period": "2014",
+      "value": 20167.0,
+      "unit": "元",
+      "frequency": "annual",
+      "kind": "annual_amount",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "d153132154a549a78363017ef74ca784:305bba1e881e413b91f32a06a4be65fd",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
+    },
+    {
+      "indicator_id": "income_annual_value",
+      "period": "2015",
+      "value": 21966.0,
+      "unit": "元",
+      "frequency": "annual",
+      "kind": "annual_amount",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "d153132154a549a78363017ef74ca784:305bba1e881e413b91f32a06a4be65fd",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
+    },
+    {
+      "indicator_id": "income_annual_value",
+      "period": "2016",
+      "value": 23821.0,
+      "unit": "元",
+      "frequency": "annual",
+      "kind": "annual_amount",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "d153132154a549a78363017ef74ca784:305bba1e881e413b91f32a06a4be65fd",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
+    },
+    {
+      "indicator_id": "income_annual_value",
+      "period": "2017",
+      "value": 25974.0,
+      "unit": "元",
+      "frequency": "annual",
+      "kind": "annual_amount",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "d153132154a549a78363017ef74ca784:305bba1e881e413b91f32a06a4be65fd",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
+    },
+    {
+      "indicator_id": "income_annual_value",
+      "period": "2018",
+      "value": 28228.0,
+      "unit": "元",
+      "frequency": "annual",
+      "kind": "annual_amount",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "d153132154a549a78363017ef74ca784:305bba1e881e413b91f32a06a4be65fd",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
+    },
+    {
+      "indicator_id": "income_annual_value",
+      "period": "2019",
+      "value": 30733.0,
+      "unit": "元",
+      "frequency": "annual",
+      "kind": "annual_amount",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "d153132154a549a78363017ef74ca784:305bba1e881e413b91f32a06a4be65fd",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
+    },
+    {
+      "indicator_id": "income_annual_value",
+      "period": "2020",
+      "value": 32189.0,
+      "unit": "元",
+      "frequency": "annual",
+      "kind": "annual_amount",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "d153132154a549a78363017ef74ca784:305bba1e881e413b91f32a06a4be65fd",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
+    },
+    {
+      "indicator_id": "income_annual_value",
+      "period": "2021",
+      "value": 35128.0,
+      "unit": "元",
+      "frequency": "annual",
+      "kind": "annual_amount",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "d153132154a549a78363017ef74ca784:305bba1e881e413b91f32a06a4be65fd",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
+    },
+    {
+      "indicator_id": "income_annual_value",
+      "period": "2022",
+      "value": 36883.0,
+      "unit": "元",
+      "frequency": "annual",
+      "kind": "annual_amount",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "d153132154a549a78363017ef74ca784:305bba1e881e413b91f32a06a4be65fd",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
+    },
+    {
+      "indicator_id": "income_annual_value",
+      "period": "2023",
+      "value": 39218.0,
+      "unit": "元",
+      "frequency": "annual",
+      "kind": "annual_amount",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "d153132154a549a78363017ef74ca784:305bba1e881e413b91f32a06a4be65fd",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
+    },
+    {
+      "indicator_id": "income_annual_value",
+      "period": "2024",
+      "value": 41314.0,
+      "unit": "元",
+      "frequency": "annual",
+      "kind": "annual_amount",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "d153132154a549a78363017ef74ca784:305bba1e881e413b91f32a06a4be65fd",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
+    },
+    {
+      "indicator_id": "income_annual_value",
+      "period": "2025",
+      "value": 43377.0,
+      "unit": "元",
+      "frequency": "annual",
+      "kind": "annual_amount",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "d153132154a549a78363017ef74ca784:305bba1e881e413b91f32a06a4be65fd",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
+    },
     {
       "indicator_id": "private_investment",
       "period": "2012-03",
@@ -15213,8 +15689,8 @@
     },
     {
       "indicator_id": "retail_annual_value",
-      "period": "2024-03",
-      "value": 39019.9,
+      "period": "2000",
+      "value": 38447.1,
       "unit": "亿元",
       "frequency": "annual",
       "kind": "annual_amount",
@@ -15223,15 +15699,15 @@
       "source_indicator": "d5b51c4a56d646b3b3f00f2c9e31a217:008350880eb14928acc53fe20b295415",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T22:07:08+08:00",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T22:07:08+08:00"
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
     },
     {
       "indicator_id": "retail_annual_value",
-      "period": "2024-04",
-      "value": 35699.1,
+      "period": "2001",
+      "value": 42240.4,
       "unit": "亿元",
       "frequency": "annual",
       "kind": "annual_amount",
@@ -15240,15 +15716,15 @@
       "source_indicator": "d5b51c4a56d646b3b3f00f2c9e31a217:008350880eb14928acc53fe20b295415",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T22:07:08+08:00",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T22:07:08+08:00"
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
     },
     {
       "indicator_id": "retail_annual_value",
-      "period": "2024-05",
-      "value": 39211.0,
+      "period": "2002",
+      "value": 47124.6,
       "unit": "亿元",
       "frequency": "annual",
       "kind": "annual_amount",
@@ -15257,15 +15733,15 @@
       "source_indicator": "d5b51c4a56d646b3b3f00f2c9e31a217:008350880eb14928acc53fe20b295415",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T22:07:08+08:00",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T22:07:08+08:00"
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
     },
     {
       "indicator_id": "retail_annual_value",
-      "period": "2024-06",
-      "value": 40731.6,
+      "period": "2003",
+      "value": 51303.9,
       "unit": "亿元",
       "frequency": "annual",
       "kind": "annual_amount",
@@ -15274,15 +15750,15 @@
       "source_indicator": "d5b51c4a56d646b3b3f00f2c9e31a217:008350880eb14928acc53fe20b295415",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T22:07:08+08:00",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T22:07:08+08:00"
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
     },
     {
       "indicator_id": "retail_annual_value",
-      "period": "2024-07",
-      "value": 37757.4,
+      "period": "2004",
+      "value": 58004.1,
       "unit": "亿元",
       "frequency": "annual",
       "kind": "annual_amount",
@@ -15291,15 +15767,15 @@
       "source_indicator": "d5b51c4a56d646b3b3f00f2c9e31a217:008350880eb14928acc53fe20b295415",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T22:07:08+08:00",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T22:07:08+08:00"
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
     },
     {
       "indicator_id": "retail_annual_value",
-      "period": "2024-08",
-      "value": 38725.8,
+      "period": "2005",
+      "value": 66491.7,
       "unit": "亿元",
       "frequency": "annual",
       "kind": "annual_amount",
@@ -15308,15 +15784,15 @@
       "source_indicator": "d5b51c4a56d646b3b3f00f2c9e31a217:008350880eb14928acc53fe20b295415",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T22:07:08+08:00",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T22:07:08+08:00"
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
     },
     {
       "indicator_id": "retail_annual_value",
-      "period": "2024-09",
-      "value": 41112.3,
+      "period": "2006",
+      "value": 76827.2,
       "unit": "亿元",
       "frequency": "annual",
       "kind": "annual_amount",
@@ -15325,15 +15801,15 @@
       "source_indicator": "d5b51c4a56d646b3b3f00f2c9e31a217:008350880eb14928acc53fe20b295415",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T22:07:08+08:00",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T22:07:08+08:00"
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
     },
     {
       "indicator_id": "retail_annual_value",
-      "period": "2024-10",
-      "value": 45396.4,
+      "period": "2007",
+      "value": 90638.4,
       "unit": "亿元",
       "frequency": "annual",
       "kind": "annual_amount",
@@ -15342,15 +15818,15 @@
       "source_indicator": "d5b51c4a56d646b3b3f00f2c9e31a217:008350880eb14928acc53fe20b295415",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T22:07:08+08:00",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T22:07:08+08:00"
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
     },
     {
       "indicator_id": "retail_annual_value",
-      "period": "2024-11",
-      "value": 43763.0,
+      "period": "2008",
+      "value": 110994.6,
       "unit": "亿元",
       "frequency": "annual",
       "kind": "annual_amount",
@@ -15359,15 +15835,15 @@
       "source_indicator": "d5b51c4a56d646b3b3f00f2c9e31a217:008350880eb14928acc53fe20b295415",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T22:07:08+08:00",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T22:07:08+08:00"
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
     },
     {
       "indicator_id": "retail_annual_value",
-      "period": "2024-12",
-      "value": 45171.5,
+      "period": "2009",
+      "value": 128331.3,
       "unit": "亿元",
       "frequency": "annual",
       "kind": "annual_amount",
@@ -15376,15 +15852,15 @@
       "source_indicator": "d5b51c4a56d646b3b3f00f2c9e31a217:008350880eb14928acc53fe20b295415",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T22:07:08+08:00",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T22:07:08+08:00"
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
     },
     {
       "indicator_id": "retail_annual_value",
-      "period": "2025-03",
-      "value": 40940.5,
+      "period": "2010",
+      "value": 152083.1,
       "unit": "亿元",
       "frequency": "annual",
       "kind": "annual_amount",
@@ -15393,15 +15869,15 @@
       "source_indicator": "d5b51c4a56d646b3b3f00f2c9e31a217:008350880eb14928acc53fe20b295415",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T22:07:08+08:00",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T22:07:08+08:00"
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
     },
     {
       "indicator_id": "retail_annual_value",
-      "period": "2025-04",
-      "value": 37174.1,
+      "period": "2011",
+      "value": 179803.8,
       "unit": "亿元",
       "frequency": "annual",
       "kind": "annual_amount",
@@ -15410,15 +15886,15 @@
       "source_indicator": "d5b51c4a56d646b3b3f00f2c9e31a217:008350880eb14928acc53fe20b295415",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T22:07:08+08:00",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T22:07:08+08:00"
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
     },
     {
       "indicator_id": "retail_annual_value",
-      "period": "2025-05",
-      "value": 41325.8,
+      "period": "2012",
+      "value": 205517.3,
       "unit": "亿元",
       "frequency": "annual",
       "kind": "annual_amount",
@@ -15427,15 +15903,15 @@
       "source_indicator": "d5b51c4a56d646b3b3f00f2c9e31a217:008350880eb14928acc53fe20b295415",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T22:07:08+08:00",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T22:07:08+08:00"
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
     },
     {
       "indicator_id": "retail_annual_value",
-      "period": "2025-06",
-      "value": 42287.4,
+      "period": "2013",
+      "value": 232252.6,
       "unit": "亿元",
       "frequency": "annual",
       "kind": "annual_amount",
@@ -15444,15 +15920,15 @@
       "source_indicator": "d5b51c4a56d646b3b3f00f2c9e31a217:008350880eb14928acc53fe20b295415",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T22:07:08+08:00",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T22:07:08+08:00"
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
     },
     {
       "indicator_id": "retail_annual_value",
-      "period": "2025-07",
-      "value": 38780.2,
+      "period": "2014",
+      "value": 259487.3,
       "unit": "亿元",
       "frequency": "annual",
       "kind": "annual_amount",
@@ -15461,15 +15937,15 @@
       "source_indicator": "d5b51c4a56d646b3b3f00f2c9e31a217:008350880eb14928acc53fe20b295415",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T22:07:08+08:00",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T22:07:08+08:00"
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
     },
     {
       "indicator_id": "retail_annual_value",
-      "period": "2025-08",
-      "value": 39667.6,
+      "period": "2015",
+      "value": 286587.8,
       "unit": "亿元",
       "frequency": "annual",
       "kind": "annual_amount",
@@ -15478,15 +15954,15 @@
       "source_indicator": "d5b51c4a56d646b3b3f00f2c9e31a217:008350880eb14928acc53fe20b295415",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T22:07:08+08:00",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T22:07:08+08:00"
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
     },
     {
       "indicator_id": "retail_annual_value",
-      "period": "2025-09",
-      "value": 41971.0,
+      "period": "2016",
+      "value": 315806.2,
       "unit": "亿元",
       "frequency": "annual",
       "kind": "annual_amount",
@@ -15495,15 +15971,15 @@
       "source_indicator": "d5b51c4a56d646b3b3f00f2c9e31a217:008350880eb14928acc53fe20b295415",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T22:07:08+08:00",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T22:07:08+08:00"
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
     },
     {
       "indicator_id": "retail_annual_value",
-      "period": "2025-10",
-      "value": 46291.3,
+      "period": "2017",
+      "value": 347326.7,
       "unit": "亿元",
       "frequency": "annual",
       "kind": "annual_amount",
@@ -15512,15 +15988,15 @@
       "source_indicator": "d5b51c4a56d646b3b3f00f2c9e31a217:008350880eb14928acc53fe20b295415",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T22:07:08+08:00",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T22:07:08+08:00"
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
     },
     {
       "indicator_id": "retail_annual_value",
-      "period": "2025-11",
-      "value": 43898.0,
+      "period": "2018",
+      "value": 377783.1,
       "unit": "亿元",
       "frequency": "annual",
       "kind": "annual_amount",
@@ -15529,15 +16005,15 @@
       "source_indicator": "d5b51c4a56d646b3b3f00f2c9e31a217:008350880eb14928acc53fe20b295415",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T22:07:08+08:00",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T22:07:08+08:00"
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
     },
     {
       "indicator_id": "retail_annual_value",
-      "period": "2025-12",
-      "value": 45135.9,
+      "period": "2019",
+      "value": 407253.3,
       "unit": "亿元",
       "frequency": "annual",
       "kind": "annual_amount",
@@ -15546,15 +16022,15 @@
       "source_indicator": "d5b51c4a56d646b3b3f00f2c9e31a217:008350880eb14928acc53fe20b295415",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T22:07:08+08:00",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T22:07:08+08:00"
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
     },
     {
       "indicator_id": "retail_annual_value",
-      "period": "2026-03",
-      "value": 41616.0,
+      "period": "2020",
+      "value": 390514.3,
       "unit": "亿元",
       "frequency": "annual",
       "kind": "annual_amount",
@@ -15563,15 +16039,15 @@
       "source_indicator": "d5b51c4a56d646b3b3f00f2c9e31a217:008350880eb14928acc53fe20b295415",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T22:07:08+08:00",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T22:07:08+08:00"
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
     },
     {
       "indicator_id": "retail_annual_value",
-      "period": "2026-04",
-      "value": 37246.5,
+      "period": "2021",
+      "value": 438351.9,
       "unit": "亿元",
       "frequency": "annual",
       "kind": "annual_amount",
@@ -15580,15 +16056,15 @@
       "source_indicator": "d5b51c4a56d646b3b3f00f2c9e31a217:008350880eb14928acc53fe20b295415",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T22:07:08+08:00",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T22:07:08+08:00"
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
     },
     {
       "indicator_id": "retail_annual_value",
-      "period": "2026-05",
-      "value": 41090.0,
+      "period": "2022",
+      "value": 436448.7,
       "unit": "亿元",
       "frequency": "annual",
       "kind": "annual_amount",
@@ -15597,15 +16073,15 @@
       "source_indicator": "d5b51c4a56d646b3b3f00f2c9e31a217:008350880eb14928acc53fe20b295415",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T22:07:08+08:00",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T22:07:08+08:00"
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
     },
     {
       "indicator_id": "retail_annual_value",
-      "period": "2026-06",
-      "value": 42690.7,
+      "period": "2023",
+      "value": 467098.0,
       "unit": "亿元",
       "frequency": "annual",
       "kind": "annual_amount",
@@ -15614,15 +16090,15 @@
       "source_indicator": "d5b51c4a56d646b3b3f00f2c9e31a217:008350880eb14928acc53fe20b295415",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T22:07:08+08:00",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T22:07:08+08:00"
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
     },
     {
       "indicator_id": "retail_annual_value",
-      "period": "2026-07",
-      "value": 39022.3,
+      "period": "2024",
+      "value": 483344.7,
       "unit": "亿元",
       "frequency": "annual",
       "kind": "annual_amount",
@@ -15631,15 +16107,15 @@
       "source_indicator": "d5b51c4a56d646b3b3f00f2c9e31a217:008350880eb14928acc53fe20b295415",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T22:07:08+08:00",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T22:07:08+08:00"
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
     },
     {
       "indicator_id": "retail_annual_value",
-      "period": "2026-08",
-      "value": 39824.4,
+      "period": "2025",
+      "value": 501202.4,
       "unit": "亿元",
       "frequency": "annual",
       "kind": "annual_amount",
@@ -15648,10 +16124,10 @@
       "source_indicator": "d5b51c4a56d646b3b3f00f2c9e31a217:008350880eb14928acc53fe20b295415",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T22:07:08+08:00",
+      "retrieved_at": "2026-10-14T22:09:24+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T22:07:08+08:00"
+      "first_observed_at": "2026-10-14T22:09:24+08:00"
     },
     {
       "indicator_id": "retail_value",
@@ -31629,27 +32105,27 @@
       "last_error": null
     },
     "retail_annual_value": {
-      "first_period": "2024-03",
-      "last_period": "2026-08",
+      "first_period": "2000",
+      "last_period": "2025",
       "unique_periods": 26,
       "versions": 26,
       "status": "ok",
       "last_error": null
     },
     "income_annual_value": {
-      "first_period": null,
-      "last_period": null,
-      "unique_periods": 0,
-      "versions": 0,
-      "status": "partial",
+      "first_period": "2013",
+      "last_period": "2025",
+      "unique_periods": 13,
+      "versions": 13,
+      "status": "ok",
       "last_error": null
     },
     "income_annual_nominal": {
-      "first_period": null,
-      "last_period": null,
-      "unique_periods": 0,
-      "versions": 0,
-      "status": "partial",
+      "first_period": "2013",
+      "last_period": "2025",
+      "unique_periods": 13,
+      "versions": 13,
+      "status": "ok",
       "last_error": null
     },
     "industrial_profit_annual_value": {
@@ -31658,15 +32134,15 @@
       "unique_periods": 0,
       "versions": 0,
       "status": "partial",
-      "last_error": null
+      "last_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
     },
     "private_investment_annual_nominal": {
       "first_period": null,
       "last_period": null,
       "unique_periods": 0,
       "versions": 0,
-      "status": "partial",
-      "last_error": null
+      "status": "fetch_failed",
+      "last_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
     }
   },
   "run_status": {
@@ -31675,135 +32151,135 @@
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 26,
-      "checked_at": "2026-10-14T22:07:08+08:00"
+      "checked_at": "2026-10-14T22:09:24+08:00"
     },
     "retail_ytd": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 29,
-      "checked_at": "2026-10-14T22:07:08+08:00"
+      "checked_at": "2026-10-14T22:09:24+08:00"
     },
     "retail_value": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 26,
-      "checked_at": "2026-10-14T22:07:08+08:00"
+      "checked_at": "2026-10-14T22:09:24+08:00"
     },
     "retail_ytd_value": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 29,
-      "checked_at": "2026-10-14T22:07:08+08:00"
+      "checked_at": "2026-10-14T22:09:24+08:00"
     },
     "services": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-10-14T22:07:08+08:00"
+      "checked_at": "2026-10-14T22:09:24+08:00"
     },
     "catering": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-10-14T22:07:08+08:00"
+      "checked_at": "2026-10-14T22:09:24+08:00"
     },
     "income": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-10-14T22:07:08+08:00"
+      "checked_at": "2026-10-14T22:09:24+08:00"
     },
     "private_investment": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 29,
-      "checked_at": "2026-10-14T22:07:08+08:00"
+      "checked_at": "2026-10-14T22:09:24+08:00"
     },
     "real_estate_investment": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 29,
-      "checked_at": "2026-10-14T22:07:08+08:00"
+      "checked_at": "2026-10-14T22:09:24+08:00"
     },
     "real_estate_investment_value": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 29,
-      "checked_at": "2026-10-14T22:07:08+08:00"
+      "checked_at": "2026-10-14T22:09:24+08:00"
     },
     "real_estate_sales": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-10-14T22:07:08+08:00"
+      "checked_at": "2026-10-14T22:09:24+08:00"
     },
     "guangzhou_new_home": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-10-14T22:07:08+08:00"
+      "checked_at": "2026-10-14T22:09:24+08:00"
     },
     "guangzhou_second_home": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-10-14T22:07:08+08:00"
+      "checked_at": "2026-10-14T22:09:24+08:00"
     },
     "industrial_profit": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-10-14T22:07:08+08:00"
+      "checked_at": "2026-10-14T22:09:24+08:00"
     },
     "unemployment": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 32,
-      "checked_at": "2026-10-14T22:07:08+08:00"
+      "checked_at": "2026-10-14T22:09:24+08:00"
     },
     "guangzhou_retail": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-10-14T22:07:08+08:00"
+      "checked_at": "2026-10-14T22:09:24+08:00"
     },
     "retail_annual_value": {
       "status": "ok",
       "last_error": null,
-      "checked_years": 3,
+      "checked_years": 27,
       "fetched_observations": 26,
-      "checked_at": "2026-10-14T22:07:08+08:00"
+      "checked_at": "2026-10-14T22:09:24+08:00"
     },
     "income_annual_value": {
-      "status": "partial",
+      "status": "ok",
       "last_error": null,
-      "checked_years": 3,
-      "fetched_observations": 0,
-      "checked_at": "2026-10-14T22:07:08+08:00"
+      "checked_years": 14,
+      "fetched_observations": 13,
+      "checked_at": "2026-10-14T22:09:24+08:00"
     },
     "income_annual_nominal": {
-      "status": "partial",
+      "status": "ok",
       "last_error": null,
-      "checked_years": 3,
-      "fetched_observations": 0,
-      "checked_at": "2026-10-14T22:07:08+08:00"
+      "checked_years": 14,
+      "fetched_observations": 13,
+      "checked_at": "2026-10-14T22:09:24+08:00"
     },
     "industrial_profit_annual_value": {
       "status": "partial",
-      "last_error": null,
-      "checked_years": 3,
+      "last_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "checked_years": 11,
       "fetched_observations": 0,
-      "checked_at": "2026-10-14T22:07:08+08:00"
+      "checked_at": "2026-10-14T22:09:24+08:00"
     },
     "private_investment_annual_nominal": {
-      "status": "partial",
-      "last_error": null,
-      "checked_years": 3,
+      "status": "fetch_failed",
+      "last_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "checked_years": 0,
       "fetched_observations": 0,
-      "checked_at": "2026-10-14T22:07:08+08:00"
+      "checked_at": "2026-10-14T22:09:24+08:00"
     }
   },
-  "data_count": 1829,
-  "archive_versions": 1829,
+  "data_count": 1855,
+  "archive_versions": 1855,
   "full_backfill_this_run": false,
   "description": "发布日和统计期分开。历史官方发布日未知时留空，不用抓取日冒充。"
 }
