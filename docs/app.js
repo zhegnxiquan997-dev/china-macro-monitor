@@ -45,11 +45,11 @@ function draw(){
  $("firstPeriod").textContent=cov.first_period||"—";
  $("lastPeriod").textContent=cov.last_period||"—";
  $("observed").textContent=format(cov.unique_periods||0);
- $("sourceType").textContent=m.source==="nbs_api"?"国家统计局新版数据接口":"官方公报（待逐项接入）";
+ $("sourceType").textContent=m.source==="nbs_api"?"国家统计局新版数据接口":data.coverage?.[selected]?.unique_periods?"官方公报（已核验入库）":"官方公报（待接入）";
  let status=data.run_status?.[selected];
  $("warning").textContent= status?.last_error?"本次抓取异常："+status.last_error:(rows.length?"历史数据来源可追溯；旧数据的最初发布日期可能尚未核实。":"当前缺少该指标的可核验历史记录；不会用估算值填充。");
  $("coverageText").textContent="配置可回溯至："+m.start_year+"年；实际已入库："+(cov.first_period||"暂无")+" 至 "+(cov.last_period||"暂无")+"。";
- $("coverageBar").style.width=(cov.unique_periods?Math.min(100,100*cov.unique_periods/(Math.max(1,(new Date().getFullYear()-m.start_year+1)*(m.frequency==="monthly"?12:4)))):0)+"%";
+ $("coverageBar").style.width=(cov.unique_periods?Math.min(100,100*cov.unique_periods/(Math.max(1,(new Date().getFullYear()-m.start_year+1)*(m.frequency==="monthly"?12:m.frequency==="quarterly"?4:1)))):0)+"%";
  $("tableTitle").textContent=m.name+" · 历史明细";
  $("rowHint").textContent="当前筛选共 "+rows.length+" 期";
  renderChart(rows,m);
@@ -68,7 +68,7 @@ function renderChart(rows,m){
  const xx=r=>pad.l+(numericX(r.period)-x0)/Math.max(.0001,x1-x0)*(W-pad.l-pad.r);
  const yy=r=>H-pad.b-(r.value-ymin)/(ymax-ymin)*(H-pad.t-pad.b);
  const grid=Array.from({length:5},(_,i)=>{let y=pad.t+(H-pad.t-pad.b)*i/4,val=ymax-(ymax-ymin)*i/4;return '<line x1="'+pad.l+'" x2="'+(W-pad.r)+'" y1="'+y+'" y2="'+y+'" stroke="#e9eff5"/><text x="'+(pad.l-9)+'" y="'+(y+4)+'" font-size="12" fill="#8290a1" text-anchor="end">'+format(val)+'</text>'}).join("");
- const step=m.frequency==="monthly"?1/12:1/4;
+ const step=m.frequency==="monthly"?1/12:m.frequency==="quarterly"?1/4:1;
  let d="";rows.forEach((r,i)=>{const prev=rows[i-1]; const gap=prev?numericX(r.period)-numericX(prev.period):0;d+=(i===0||gap>step*2.4?"M":"L")+xx(r).toFixed(2)+","+yy(r).toFixed(2)+" "});
  let xticks=[];let low=Math.ceil(x0),high=Math.floor(x1),stride=Math.max(1,Math.ceil((high-low)/7));for(let y=low;y<=high;y+=stride)xticks.push(y);
  const xs=xticks.map(y=>{let x=pad.l+(y-x0)/Math.max(.0001,x1-x0)*(W-pad.l-pad.r);return '<text x="'+x+'" y="'+(H-14)+'" text-anchor="middle" fill="#8290a1" font-size="12">'+y+'</text>'}).join("");
