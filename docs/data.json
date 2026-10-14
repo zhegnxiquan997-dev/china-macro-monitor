@@ -1,5 +1,5 @@
 {
-  "generated_at": "未运行",
+  "generated_at": "2026-10-14T21:32:44+08:00",
   "indicators": [
     {
       "id": "retail",
@@ -54,5 +54,6 @@
   ],
   "latest": {},
   "history": [],
-  "data_count": 0
+  "data_count": 0,
+  "automatic_official_collection_enabled": false
 }
