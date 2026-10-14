@@ -226,10 +226,23 @@ def merge_records(existing, incoming):
     for row in archive:
         by_key[(row["indicator_id"], row["period"])].append(row)
     changes = 0
-    for row in incoming:
+    # Process releases chronologically. CSV bootstrap is never allowed to
+    # silently roll back a newer official publication of the same metric/period.
+    source_rank = {"official_release_manual_import": 0, "official_release_scraper": 1, "nbs_new_release_api": 2}
+    ordered = sorted(incoming, key=lambda r: (r["indicator_id"], r["period"],
+                     r.get("official_release_date") or "", source_rank.get(r.get("method"), 0)))
+    for row in ordered:
         key = row["indicator_id"], row["period"]
         versions = by_key[key]
         previous = versions[-1] if versions else None
+        if previous and previous.get("value") != row["value"]:
+            old_date = previous.get("official_release_date")
+            new_date = row.get("official_release_date")
+            if old_date and new_date and new_date < old_date:
+                continue  # Old headline or seed cannot undo a later revision.
+            if old_date and new_date and new_date == old_date:
+                LOG.warning("Conflicting values for same official issue %s %s on %s", key[0], key[1], new_date)
+                continue
         if previous and previous.get("value") == row["value"]:
             # A later identified publication date supplements existing metadata,
             # without manufacturing a new numeric revision.
