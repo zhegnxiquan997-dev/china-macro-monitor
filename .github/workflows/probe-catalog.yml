@@ -1,0 +1,20 @@
+name: 国家统计局历史目录诊断
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/probe-catalog.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install "requests>=2.31,<3"
+      - run: python catalog_probe.py
