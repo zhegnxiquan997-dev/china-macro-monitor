@@ -29,14 +29,15 @@ YEAR_MONTH = re.compile(r"(20\d{2})年([1-9]|1[0-2])月份?")
 DATE_RX = [
     re.compile(r"发布时间[:：]?\s*(20\d{2})[-/年](\d{1,2})[-/月](\d{1,2})"),
     re.compile(r"发布日期[:：]?\s*(20\d{2})[-/年](\d{1,2})[-/月](\d{1,2})"),
+    re.compile(r"(?<!\d)(20\d{2})/(\d{1,2})/(\d{1,2})\s+\d{1,2}:\d{2}"),
 ]
 VALUE = r"(?P<direction>增长|下降)(?P<value>\d+(?:\.\d+)?)%"
 METRICS = {
     "nbs_profit":("industrial_profit",re.compile(r"全国规模以上工业企业实现利润总额[\d,.]+亿元，同比"+VALUE)),
     "nbs_sales":("real_estate_sales",re.compile(r"新建商品房销售面积[\d,.]+万平方米，同比"+VALUE)),
     "nbs_catering":("catering",re.compile(r"餐饮收入[\d,.]+亿元，(?:同比)?"+VALUE)),
-    "nbs_services":("services",re.compile(r"(?:其中)?服务零售额(?:同比)?"+VALUE)),
-    "nbs_income":("income",re.compile(r"扣除价格因素，实际"+VALUE)),
+    "nbs_services":("services",re.compile(r"其中服务零售额(?:同比)?"+VALUE)),
+    "nbs_income":("income",re.compile(r"全国居民人均可支配收入[^。]{0,160}?扣除价格因素，实际"+VALUE)),
     "gz_retail":("guangzhou_retail",re.compile(r"全市实现社会消费品零售总额[\d,.]+亿元，同比"+VALUE)),
     "gz_catering":("guangzhou_catering",re.compile(r"(?:分消费类型看，)?商品零售(?:增长|下降)[\d.]+%，餐饮收入"+VALUE)),
     "gz_private":("guangzhou_private_investment",re.compile(r"民间投资(?:总体增势平稳，)?同比"+VALUE)),
