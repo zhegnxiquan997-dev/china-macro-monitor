@@ -1,0 +1,190 @@
+{
+  "schema_version": 2,
+  "history_start_year": 2000,
+  "indicators": [
+    {
+      "id": "retail",
+      "name": "社会消费品零售总额当月同比",
+      "group": "消费",
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "yoy",
+      "start_year": 2000,
+      "source": "nbs_api",
+      "code": "d0cb882c7f27443ab6b3ef9421901961:aaac57d54d2e465d91bc9f3ea1a8618e",
+      "note": "当月同比；1—2月可能合并发布，缺失月份按官方原样保留"
+    },
+    {
+      "id": "retail_ytd",
+      "name": "社会消费品零售总额累计同比",
+      "group": "消费",
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "ytd_yoy",
+      "start_year": 2000,
+      "source": "nbs_api",
+      "code": "d0cb882c7f27443ab6b3ef9421901961:e3ca151b53d347b78d1e179e5ebf1d33",
+      "note": "年初至当月累计同比，不得当作当月同比"
+    },
+    {
+      "id": "retail_value",
+      "name": "社会消费品零售总额当月金额",
+      "group": "消费",
+      "unit": "亿元",
+      "frequency": "monthly",
+      "kind": "monthly_amount",
+      "start_year": 2000,
+      "source": "nbs_api",
+      "code": "d0cb882c7f27443ab6b3ef9421901961:1142a3a03e9045959e606a21822641ac",
+      "note": "金额与增速分别保存"
+    },
+    {
+      "id": "retail_ytd_value",
+      "name": "社会消费品零售累计金额",
+      "group": "消费",
+      "unit": "亿元",
+      "frequency": "monthly",
+      "kind": "ytd_amount",
+      "start_year": 2000,
+      "source": "nbs_api",
+      "code": "d0cb882c7f27443ab6b3ef9421901961:260a1794443b43dd93a59928b12f38af",
+      "note": "累计金额"
+    },
+    {
+      "id": "services",
+      "name": "服务零售额累计同比",
+      "group": "消费",
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "ytd_yoy",
+      "start_year": 2023,
+      "source": "official_release",
+      "note": "指标较新；需官方公报校验后入库"
+    },
+    {
+      "id": "catering",
+      "name": "餐饮收入累计同比",
+      "group": "广州快消",
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "ytd_yoy",
+      "start_year": 2000,
+      "source": "official_release",
+      "note": "按官方公报口径持续补全"
+    },
+    {
+      "id": "income",
+      "name": "全国居民人均可支配收入实际增速",
+      "group": "居民收入",
+      "unit": "%",
+      "frequency": "quarterly",
+      "kind": "ytd_real_yoy",
+      "start_year": 2013,
+      "source": "official_release",
+      "note": "全国统一可比口径始于2013年；此前城乡收入单独管理"
+    },
+    {
+      "id": "private_investment",
+      "name": "民间固定资产投资累计同比",
+      "group": "民间投资",
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "ytd_yoy",
+      "start_year": 2012,
+      "source": "nbs_api",
+      "code": "5129067b149d4ddfbec1ffc478d35bfb:287f55a9520d43a9b3e045860a49fedd",
+      "note": "2012年起按月公开"
+    },
+    {
+      "id": "real_estate_investment",
+      "name": "房地产开发投资累计同比",
+      "group": "房地产",
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "ytd_yoy",
+      "start_year": 2000,
+      "source": "nbs_api",
+      "code": "9206137ccf03460daa74b7799e0f3c31:205e08cba8c2409980db58c98da91b6f",
+      "note": "累计同比"
+    },
+    {
+      "id": "real_estate_investment_value",
+      "name": "房地产开发投资累计金额",
+      "group": "房地产",
+      "unit": "亿元",
+      "frequency": "monthly",
+      "kind": "ytd_amount",
+      "start_year": 2000,
+      "source": "nbs_api",
+      "code": "9206137ccf03460daa74b7799e0f3c31:bfb626c0dfa04afab67937c452ca9f50",
+      "note": "累计金额"
+    },
+    {
+      "id": "real_estate_sales",
+      "name": "新建商品房销售面积累计同比",
+      "group": "房地产",
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "ytd_yoy",
+      "start_year": 2000,
+      "source": "official_release",
+      "note": "等待稳定的唯一指标编号"
+    },
+    {
+      "id": "guangzhou_new_home",
+      "name": "广州新建商品住宅价格环比",
+      "group": "广州快消",
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "mom",
+      "start_year": 2011,
+      "source": "official_release",
+      "note": "2011年住宅价格统计制度调整；指数换算需核验"
+    },
+    {
+      "id": "guangzhou_second_home",
+      "name": "广州二手住宅价格环比",
+      "group": "广州快消",
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "mom",
+      "start_year": 2011,
+      "source": "official_release",
+      "note": "不得与房价绝对金额直接比较"
+    },
+    {
+      "id": "industrial_profit",
+      "name": "规模以上工业企业利润累计同比",
+      "group": "企业与就业",
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "ytd_yoy",
+      "start_year": 2000,
+      "source": "official_release",
+      "note": "历史口径或统计范围调整需标记"
+    },
+    {
+      "id": "unemployment",
+      "name": "全国城镇调查失业率",
+      "group": "企业与就业",
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "rate",
+      "start_year": 2018,
+      "source": "nbs_api",
+      "code": "ee3b7046b390415b9b7745e3d16f6052:3888eac6062945a79c8a27e5f13d4953",
+      "note": "2018年起定期按月公开；勿与登记失业率拼接"
+    },
+    {
+      "id": "guangzhou_retail",
+      "name": "广州社会消费品零售总额累计同比",
+      "group": "广州快消",
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "ytd_yoy",
+      "start_year": 2000,
+      "source": "official_release",
+      "note": "广州统计局官方发布数据逐步回填"
+    }
+  ]
+}
