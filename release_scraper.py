@@ -21,6 +21,21 @@ PINNED = [
     "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
     "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964129.html",
     "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_11011965.html",
+    "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_10971444.html",
+    "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_10914237.html",
+    "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_10873183.html",
+    "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_10829346.html",
+    "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_10779777.html",
+    "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_10736142.html",
+    "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_10602940.html",
+    "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_10563069.html",
+    "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_10515649.html",
+    "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_10456486.html",
+    "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_10415868.html",
+    "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_10364758.html",
+    "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_10318395.html",
+    "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_10276061.html",
+    "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_10234545.html",
 ]
 INDEXES = [NBS_INDEX,NBS_RUN_INDEX,GZ_INDEX]
 MONTH = r"(?:1[—–\-－至到])?([1-9]|1[0-2])月(?:份)?"
@@ -38,7 +53,7 @@ METRICS = {
     "nbs_catering":("catering",re.compile(r"餐饮收入[\d,.]+亿元，(?:同比)?"+VALUE)),
     "nbs_services":("services",re.compile(r"其中服务零售额(?:同比)?"+VALUE)),
     "nbs_income":("income",re.compile(r"全国居民人均可支配收入[^。]{0,160}?扣除价格因素，实际"+VALUE)),
-    "gz_retail":("guangzhou_retail",re.compile(r"全市实现社会消费品零售总额[\d,.]+亿元，同比"+VALUE)),
+    "gz_retail":("guangzhou_retail",re.compile(r"(?:全市实现|全市|实现)社会消费品零售总额[\d,.]+亿元，同比"+VALUE)),
     "gz_catering":("guangzhou_catering",re.compile(r"(?:分消费类型看，)?商品零售(?:增长|下降)[\d.]+%，餐饮收入"+VALUE)),
     "gz_private":("guangzhou_private_investment",re.compile(r"民间投资(?:总体增势平稳，)?同比"+VALUE)),
 }
@@ -105,6 +120,10 @@ def parse_article(url,html,catalog,retrieved_at):
     normalized=text_normalize(text)
     released=parse_publication_date(text)
     period=period_from_title(title,normalized,released)
+    # Guangzhou quarter headlines describe calendar-year-to-date cumulative results.
+    if urlparse(url).hostname=="tjj.gz.gov.cn" and period and re.fullmatch(r"20\d{2}-Q[1-4]",period):
+        year,quarter=period.split("-Q")
+        period=f"{year}-{int(quarter)*3:02d}"
     if not period:return []
     found=[]
     for key,(mid,pattern) in METRICS.items():
