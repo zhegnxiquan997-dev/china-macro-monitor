@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-14T22:38:47+08:00",
+  "generated_at": "2026-10-14T22:43:30+08:00",
   "history_start_year": 2000,
   "indicators": [
     {
@@ -680,6 +680,261 @@
       "method": "official_release_manual_import",
       "version": 1,
       "first_observed_at": "2026-10-14T22:22:49+08:00"
+    },
+    {
+      "indicator_id": "guangzhou_retail",
+      "period": "2025-03",
+      "value": 3.5,
+      "unit": "%",
+      "kind": "ytd_yoy",
+      "frequency": "monthly",
+      "source_url": "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_10234545.html",
+      "source_title": "2025年一季度广州经济运行情况广州市统计局网站",
+      "source_indicator": null,
+      "official_release_date": "2025-04-27",
+      "release_date_status": "官方公报页面标注",
+      "retrieved_at": "2026-10-14T22:43:30+08:00",
+      "method": "official_release_scraper",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:43:30+08:00"
+    },
+    {
+      "indicator_id": "guangzhou_retail",
+      "period": "2025-04",
+      "value": 4.0,
+      "unit": "%",
+      "kind": "ytd_yoy",
+      "frequency": "monthly",
+      "source_url": "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_10276061.html",
+      "source_title": "2025年1—4月广州经济运行情况广州市统计局网站",
+      "source_indicator": null,
+      "official_release_date": "2025-05-24",
+      "release_date_status": "官方公报页面标注",
+      "retrieved_at": "2026-10-14T22:43:30+08:00",
+      "method": "official_release_scraper",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:43:30+08:00"
+    },
+    {
+      "indicator_id": "guangzhou_retail",
+      "period": "2025-05",
+      "value": 5.1,
+      "unit": "%",
+      "kind": "ytd_yoy",
+      "frequency": "monthly",
+      "source_url": "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_10318395.html",
+      "source_title": "2025年1—5月广州经济运行情况广州市统计局网站",
+      "source_indicator": null,
+      "official_release_date": "2025-06-21",
+      "release_date_status": "官方公报页面标注",
+      "retrieved_at": "2026-10-14T22:43:30+08:00",
+      "method": "official_release_scraper",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:43:30+08:00"
+    },
+    {
+      "indicator_id": "guangzhou_retail",
+      "period": "2025-06",
+      "value": 5.9,
+      "unit": "%",
+      "kind": "ytd_yoy",
+      "frequency": "monthly",
+      "source_url": "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_10364758.html",
+      "source_title": "2025年上半年广州经济运行情况广州市统计局网站",
+      "source_indicator": null,
+      "official_release_date": "2025-07-29",
+      "release_date_status": "官方公报页面标注",
+      "retrieved_at": "2026-10-14T22:43:30+08:00",
+      "method": "official_release_scraper",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:43:30+08:00"
+    },
+    {
+      "indicator_id": "guangzhou_retail",
+      "period": "2025-07",
+      "value": 5.4,
+      "unit": "%",
+      "kind": "ytd_yoy",
+      "frequency": "monthly",
+      "source_url": "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_10415868.html",
+      "source_title": "2025年1—7月广州经济运行情况广州市统计局网站",
+      "source_indicator": null,
+      "official_release_date": "2025-08-26",
+      "release_date_status": "官方公报页面标注",
+      "retrieved_at": "2026-10-14T22:43:30+08:00",
+      "method": "official_release_scraper",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:43:30+08:00"
+    },
+    {
+      "indicator_id": "guangzhou_retail",
+      "period": "2025-08",
+      "value": 4.9,
+      "unit": "%",
+      "kind": "ytd_yoy",
+      "frequency": "monthly",
+      "source_url": "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_10456486.html",
+      "source_title": "2025年1—8月广州经济运行情况广州市统计局网站",
+      "source_indicator": null,
+      "official_release_date": "2025-09-24",
+      "release_date_status": "官方公报页面标注",
+      "retrieved_at": "2026-10-14T22:43:30+08:00",
+      "method": "official_release_scraper",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:43:30+08:00"
+    },
+    {
+      "indicator_id": "guangzhou_retail",
+      "period": "2025-09",
+      "value": 4.1,
+      "unit": "%",
+      "kind": "ytd_yoy",
+      "frequency": "monthly",
+      "source_url": "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_10515649.html",
+      "source_title": "2025年前三季度广州经济运行情况广州市统计局网站",
+      "source_indicator": null,
+      "official_release_date": "2025-10-30",
+      "release_date_status": "官方公报页面标注",
+      "retrieved_at": "2026-10-14T22:43:30+08:00",
+      "method": "official_release_scraper",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:43:30+08:00"
+    },
+    {
+      "indicator_id": "guangzhou_retail",
+      "period": "2025-10",
+      "value": 3.8,
+      "unit": "%",
+      "kind": "ytd_yoy",
+      "frequency": "monthly",
+      "source_url": "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_10563069.html",
+      "source_title": "2025年1—10月广州经济运行情况广州市统计局网站",
+      "source_indicator": null,
+      "official_release_date": "2025-11-24",
+      "release_date_status": "官方公报页面标注",
+      "retrieved_at": "2026-10-14T22:43:30+08:00",
+      "method": "official_release_scraper",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:43:30+08:00"
+    },
+    {
+      "indicator_id": "guangzhou_retail",
+      "period": "2025-11",
+      "value": 4.2,
+      "unit": "%",
+      "kind": "ytd_yoy",
+      "frequency": "monthly",
+      "source_url": "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_10602940.html",
+      "source_title": "2025年1—11月广州经济运行情况广州市统计局网站",
+      "source_indicator": null,
+      "official_release_date": "2025-12-23",
+      "release_date_status": "官方公报页面标注",
+      "retrieved_at": "2026-10-14T22:43:30+08:00",
+      "method": "official_release_scraper",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:43:30+08:00"
+    },
+    {
+      "indicator_id": "guangzhou_retail",
+      "period": "2026-02",
+      "value": 10.7,
+      "unit": "%",
+      "kind": "ytd_yoy",
+      "frequency": "monthly",
+      "source_url": "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_10736142.html",
+      "source_title": "2026年1—2月广州经济运行情况广州市统计局网站",
+      "source_indicator": null,
+      "official_release_date": "2026-03-23",
+      "release_date_status": "官方公报页面标注",
+      "retrieved_at": "2026-10-14T22:43:30+08:00",
+      "method": "official_release_scraper",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:43:30+08:00"
+    },
+    {
+      "indicator_id": "guangzhou_retail",
+      "period": "2026-03",
+      "value": 6.6,
+      "unit": "%",
+      "kind": "ytd_yoy",
+      "frequency": "monthly",
+      "source_url": "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_10779777.html",
+      "source_title": "2026年一季度广州经济运行情况广州市统计局网站",
+      "source_indicator": null,
+      "official_release_date": "2026-04-23",
+      "release_date_status": "官方公报页面标注",
+      "retrieved_at": "2026-10-14T22:43:30+08:00",
+      "method": "official_release_scraper",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:43:30+08:00"
+    },
+    {
+      "indicator_id": "guangzhou_retail",
+      "period": "2026-04",
+      "value": 4.4,
+      "unit": "%",
+      "kind": "ytd_yoy",
+      "frequency": "monthly",
+      "source_url": "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_10829346.html",
+      "source_title": "2026年1—4月广州经济运行情况广州市统计局网站",
+      "source_indicator": null,
+      "official_release_date": "2026-05-29",
+      "release_date_status": "官方公报页面标注",
+      "retrieved_at": "2026-10-14T22:43:30+08:00",
+      "method": "official_release_scraper",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:43:30+08:00"
+    },
+    {
+      "indicator_id": "guangzhou_retail",
+      "period": "2026-05",
+      "value": 2.4,
+      "unit": "%",
+      "kind": "ytd_yoy",
+      "frequency": "monthly",
+      "source_url": "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_10873183.html",
+      "source_title": "2026年1—5月广州经济运行情况广州市统计局网站",
+      "source_indicator": null,
+      "official_release_date": "2026-06-26",
+      "release_date_status": "官方公报页面标注",
+      "retrieved_at": "2026-10-14T22:43:30+08:00",
+      "method": "official_release_scraper",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:43:30+08:00"
+    },
+    {
+      "indicator_id": "guangzhou_retail",
+      "period": "2026-06",
+      "value": 2.9,
+      "unit": "%",
+      "kind": "ytd_yoy",
+      "frequency": "monthly",
+      "source_url": "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_10914237.html",
+      "source_title": "2026年上半年广州经济运行情况广州市统计局网站",
+      "source_indicator": null,
+      "official_release_date": "2026-07-24",
+      "release_date_status": "官方公报页面标注",
+      "retrieved_at": "2026-10-14T22:43:30+08:00",
+      "method": "official_release_scraper",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:43:30+08:00"
+    },
+    {
+      "indicator_id": "guangzhou_retail",
+      "period": "2026-07",
+      "value": 2.7,
+      "unit": "%",
+      "kind": "ytd_yoy",
+      "frequency": "monthly",
+      "source_url": "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_10971444.html",
+      "source_title": "2026年1—7月广州经济运行情况广州市统计局网站",
+      "source_indicator": null,
+      "official_release_date": "2026-08-24",
+      "release_date_status": "官方公报页面标注",
+      "retrieved_at": "2026-10-14T22:43:30+08:00",
+      "method": "official_release_scraper",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:43:30+08:00"
     },
     {
       "indicator_id": "guangzhou_retail",
@@ -36726,10 +36981,10 @@
       "last_error": null
     },
     "guangzhou_retail": {
-      "first_period": "2026-08",
+      "first_period": "2025-03",
       "last_period": "2026-08",
-      "unique_periods": 1,
-      "versions": 1,
+      "unique_periods": 16,
+      "versions": 16,
       "status": "official_release_fetched",
       "last_error": null
     },
@@ -36796,45 +37051,45 @@
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 26,
-      "checked_at": "2026-10-14T22:38:47+08:00"
+      "checked_at": "2026-10-14T22:43:30+08:00"
     },
     "retail_ytd": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 29,
-      "checked_at": "2026-10-14T22:38:47+08:00"
+      "checked_at": "2026-10-14T22:43:30+08:00"
     },
     "retail_value": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 26,
-      "checked_at": "2026-10-14T22:38:47+08:00"
+      "checked_at": "2026-10-14T22:43:30+08:00"
     },
     "retail_ytd_value": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 29,
-      "checked_at": "2026-10-14T22:38:47+08:00"
+      "checked_at": "2026-10-14T22:43:30+08:00"
     },
     "services": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-10-14T22:38:47+08:00",
+      "checked_at": "2026-10-14T22:43:30+08:00",
       "fetched_observations": 3
     },
     "catering": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-10-14T22:38:47+08:00",
+      "checked_at": "2026-10-14T22:43:30+08:00",
       "fetched_observations": 1
     },
     "income": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-10-14T22:38:47+08:00",
+      "checked_at": "2026-10-14T22:43:30+08:00",
       "fetched_observations": 1
     },
     "private_investment": {
@@ -36842,42 +37097,42 @@
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 29,
-      "checked_at": "2026-10-14T22:38:47+08:00"
+      "checked_at": "2026-10-14T22:43:30+08:00"
     },
     "real_estate_investment": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 29,
-      "checked_at": "2026-10-14T22:38:47+08:00"
+      "checked_at": "2026-10-14T22:43:30+08:00"
     },
     "real_estate_investment_value": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 29,
-      "checked_at": "2026-10-14T22:38:47+08:00"
+      "checked_at": "2026-10-14T22:43:30+08:00"
     },
     "real_estate_sales": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-10-14T22:38:47+08:00",
+      "checked_at": "2026-10-14T22:43:30+08:00",
       "fetched_observations": 1
     },
     "guangzhou_new_home": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-10-14T22:38:47+08:00"
+      "checked_at": "2026-10-14T22:43:30+08:00"
     },
     "guangzhou_second_home": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-10-14T22:38:47+08:00"
+      "checked_at": "2026-10-14T22:43:30+08:00"
     },
     "industrial_profit": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-10-14T22:38:47+08:00",
+      "checked_at": "2026-10-14T22:43:30+08:00",
       "fetched_observations": 3
     },
     "unemployment": {
@@ -36885,64 +37140,64 @@
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 32,
-      "checked_at": "2026-10-14T22:38:47+08:00"
+      "checked_at": "2026-10-14T22:43:30+08:00"
     },
     "guangzhou_retail": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-10-14T22:38:47+08:00",
-      "fetched_observations": 1
+      "checked_at": "2026-10-14T22:43:30+08:00",
+      "fetched_observations": 16
     },
     "retail_annual_value": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 2,
-      "checked_at": "2026-10-14T22:38:47+08:00"
+      "checked_at": "2026-10-14T22:43:30+08:00"
     },
     "income_annual_value": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 2,
-      "checked_at": "2026-10-14T22:38:47+08:00"
+      "checked_at": "2026-10-14T22:43:30+08:00"
     },
     "income_annual_nominal": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 2,
-      "checked_at": "2026-10-14T22:38:47+08:00"
+      "checked_at": "2026-10-14T22:43:30+08:00"
     },
     "industrial_profit_annual_value": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 2,
-      "checked_at": "2026-10-14T22:38:47+08:00"
+      "checked_at": "2026-10-14T22:43:30+08:00"
     },
     "private_investment_annual_nominal": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 2,
-      "checked_at": "2026-10-14T22:38:47+08:00"
+      "checked_at": "2026-10-14T22:43:30+08:00"
     },
     "guangzhou_catering": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-10-14T22:38:47+08:00",
+      "checked_at": "2026-10-14T22:43:30+08:00",
       "fetched_observations": 1
     },
     "guangzhou_private_investment": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-10-14T22:38:47+08:00",
+      "checked_at": "2026-10-14T22:43:30+08:00",
       "fetched_observations": 1
     }
   },
-  "data_count": 2116,
-  "archive_versions": 2116,
+  "data_count": 2131,
+  "archive_versions": 2131,
   "full_backfill_this_run": false,
   "description": "发布日和统计期分开。历史官方发布日未知时留空，不用抓取日冒充。"
 }
