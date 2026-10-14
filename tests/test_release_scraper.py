@@ -37,6 +37,15 @@ class ReleaseTests(unittest.TestCase):
   row=parse_article("https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965310.html",doc,CFG,STAMP)
   self.assertEqual((row[0]["indicator_id"],row[0]["value"]),("real_estate_sales",-12.1))
 
+ def test_national_catering_prefers_ytd(self):
+  doc=html("2026年1—8月份社会消费品零售总额增长1.1%",
+       "按消费类型分，1—8月份，商品零售额290203亿元，同比增长1.0%；"
+       "餐饮收入37366亿元，增长2.4%。8月份，商品零售额35280亿元，同比增长0.3%；"
+       "餐饮收入4544亿元，增长1.1%。")
+  rows=parse_article("https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965311.html",doc,CFG,STAMP)
+  self.assertEqual([(r["indicator_id"],r["period"],r["value"]) for r in rows],
+                   [("catering","2026-08",2.4)])
+
  def test_guangzhou(self):
   doc=html("2026年1—8月广州经济运行情况",
       "1—8月，全市实现社会消费品零售总额7434.18亿元，同比增长2.7%。"
