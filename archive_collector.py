@@ -88,6 +88,10 @@ def parse_api_response(result, metric, fetched_at):
         period = parse_period(point.get("code", ""))
         if not period or int(period[:4]) < metric["start_year"]:
             continue
+        if metric["frequency"] == "annual" and len(period) != 4:
+            continue
+        if metric["frequency"] == "monthly" and len(period) != 7:
+            continue
         for item in point.get("values") or []:
             if not isinstance(item, dict):
                 continue
@@ -286,6 +290,14 @@ def run(full_requested):
     catalog = cfg["indicators"]
     archive_path = ROOT / "data" / "observations.json"
     archive = read_json(archive_path, [])
+    by_metric = {m["id"]: m for m in catalog}
+    # Protect against API data whose actual period granularity does not match the catalog.
+    # This also cleans misclassified records from the initial annual-series trial.
+    archive = [row for row in archive if row.get("indicator_id") in by_metric and (
+        (by_metric[row["indicator_id"]]["frequency"] == "annual" and re.fullmatch(r"20\d{2}", row.get("period", ""))) or
+        (by_metric[row["indicator_id"]]["frequency"] == "monthly" and re.fullmatch(r"20\d{2}-(?:0[1-9]|1[0-2])", row.get("period", ""))) or
+        (by_metric[row["indicator_id"]]["frequency"] == "quarterly" and re.fullmatch(r"20\d{2}-Q[1-4]", row.get("period", "")))
+    )]
     state_path = ROOT / "data" / "collector_state.json"
     state = read_json(state_path, {"full_backfill_attempted": False, "status": {}})
     full = full_requested or not state.get("full_backfill_attempted", False)
