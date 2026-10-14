@@ -114,11 +114,23 @@ def parse_article(url,html,catalog,retrieved_at):
         if metric["frequency"]=="monthly" and not re.match(r"20\d{2}-\d{2}$",period):continue
         if metric["frequency"]=="quarterly" and not re.match(r"20\d{2}-Q[1-4]$",period):continue
         matches=list(pattern.finditer(normalized))
-        # Only accept a single documented claim. Ambiguity must be reviewed.
-        if len(matches)!=1:
-            if matches:LOG.warning("Ambiguous %s in %s (%d hits)",mid,url,len(matches))
-            continue
-        match=matches[0]
+        if not matches:continue
+        if len(matches)>1:
+            signed=[float(m.group("value"))*(-1 if m.group("direction")=="下降" else 1) for m in matches]
+            if len(set(signed)) == 1:
+                match=matches[0]  # Repeated mention of the identical official figure.
+            elif key == "nbs_catering":
+                # National retail release contains both YTD and single-month catering.
+                # Use the YTD clause explicitly, never the single-month value.
+                month=int(period[-2:])
+                marker=re.search(rf"按消费类型分，1[—–\-－至到]{month}月份?，",normalized)
+                match=next((m for m in matches if marker and 0<=m.start()-marker.end()<140),None)
+                if match is None:continue
+            else:
+                LOG.warning("Conflicting %s release figures at %s: %s",mid,url,signed)
+                continue
+        else:
+            match=matches[0]
         value=float(match.group("value")) * (-1 if match.group("direction")=="下降" else 1)
         found.append({
             "indicator_id":mid,"period":period,"value":value,
