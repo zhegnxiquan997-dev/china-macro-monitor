@@ -1,0 +1,35 @@
+name: 经济研判看板校验
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - docs/analysis.js
+      - docs/analysis-core.js
+      - docs/analysis.html
+      - docs/analysis.css
+      - tests/test_analysis.cjs
+      - .github/workflows/analysis-ci.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: 检查 JavaScript 语法
+        run: |
+          node --check docs/analysis-core.js
+          node --check docs/analysis.js
+          node --check tests/test_analysis.cjs
+      - name: 运行复苏评分和广州对比单元测试
+        run: node --test tests/test_analysis.cjs
+      - name: 检查分析网页入口与脚本文件
+        run: |
+          test -s docs/analysis.html
+          test -s docs/analysis.css
+          grep -q 'analysis-core.js' docs/analysis.html
+          grep -q 'analysis.js' docs/analysis.html
+          grep -q 'analysis.html' docs/index.html
