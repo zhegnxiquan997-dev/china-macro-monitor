@@ -195,6 +195,12 @@ def from_official_csv(catalog, fetched_at):
             if int(period[:4]) < valid[mid]["start_year"]:
                 LOG.warning("CSV row %d precedes official comparable-series start", line)
                 continue
+            frequency = valid[mid]["frequency"]
+            expected = {"monthly": r"^20\d{2}-(?:0[1-9]|1[0-2])$",
+                        "quarterly": r"^20\d{2}-Q[1-4]$", "annual": r"^20\d{2}$"}[frequency]
+            if not re.fullmatch(expected, period):
+                LOG.warning("CSV row %d has wrong frequency for %s", line, mid)
+                continue
             rows.append({
                 "indicator_id": mid,
                 "period": period,
@@ -352,6 +358,18 @@ def run(full_requested):
             "fetched_observations": seen,
             "checked_at": now,
         }
+    release_count = 0
+    try:
+        from release_scraper import collect_official_releases
+        news_rows = collect_official_releases(catalog, now)
+        release_count = len(news_rows)
+        incoming.extend(news_rows)
+        for mid in {r["indicator_id"] for r in news_rows}:
+            if statuses.get(mid, {}).get("status") == "official_release_import_pending":
+                statuses[mid] = {"status": "official_release_fetched", "last_error": None,
+                                 "checked_at": now, "fetched_observations": sum(r["indicator_id"] == mid for r in news_rows)}
+    except Exception as error:
+        LOG.warning("Official press-release discovery unavailable: %s: %s", type(error).__name__, str(error)[:220])
     from_csv = from_official_csv(catalog, now)
     incoming.extend(from_csv)
     archive, new = merge_records(archive, incoming)
@@ -362,8 +380,8 @@ def run(full_requested):
     state["status"] = statuses
     write_json(state_path, state)
     build_site(catalog, archive, statuses, now, full)
-    LOG.info("Done. Added %d record versions, total archive %d, official manual rows %d",
-             new, len(archive), len(from_csv))
+    LOG.info("Done. Added %d record versions, total archive %d, verified release scrape rows %d, manual rows %d",
+             new, len(archive), release_count, len(from_csv))
 
 
 if __name__ == "__main__":
