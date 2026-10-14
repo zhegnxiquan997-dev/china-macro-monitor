@@ -55,6 +55,16 @@ class ReleaseTests(unittest.TestCase):
   self.assertEqual([(r["indicator_id"],r["period"],r["value"]) for r in rows],
                    [("catering","2026-08",2.4)])
 
+ def test_guangzhou_half_year_is_june_ytd(self):
+  doc=html("2026年上半年广州经济运行情况",
+    "上半年，全市社会消费品零售总额5774.78亿元，同比增长2.9%。"
+    "分消费类型看，商品零售增长2.6%；餐饮收入增长5.8%。",
+    "2026-07-24")
+  rows=parse_article("https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_10914237.html",doc,CFG,STAMP)
+  self.assertEqual({r["indicator_id"]:(r["period"],r["value"]) for r in rows},
+    {"guangzhou_retail":("2026-06",2.9),
+     "guangzhou_catering":("2026-06",5.8)})
+
  def test_guangzhou(self):
   doc=html("2026年1—8月广州经济运行情况",
       "1—8月，全市实现社会消费品零售总额7434.18亿元，同比增长2.7%。"
