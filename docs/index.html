@@ -1,1 +1,94 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>中国经济监测看板</title><style>body{font:16px system-ui;background:#f5f7fa;color:#182536;margin:0;padding:28px;max-width:1100px;margin:auto}h1{margin-bottom:6px}.sub{color:#617184}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:14px;margin-top:25px}.card{background:white;padding:20px;border-radius:14px;box-shadow:0 1px 6px #dfe4ed}.val{font-size:30px;font-weight:750;margin:14px 0}.muted{color:#69788a;font-size:13px}a{color:#245eae}.warn{padding:14px;background:#fff4dc;border-radius:8px;margin-top:20px}</style></head><body><h1>中国经济自动监测系统</h1><div class="sub">国家与广州指标 · 官方来源可追溯 · 无数据不填造</div><div id="meta" class="warn">正在读取数据...</div><div class="grid" id="grid"></div><script>fetch('./data.json').then(r=>r.json()).then(d=>{document.getElementById('meta').textContent='生成时间：'+d.generated_at+'｜已验证记录：'+d.data_count+'｜官方接口：待核验接入';document.getElementById('grid').innerHTML=d.indicators.map(i=>{const x=d.latest[i.id];return '<div class="card"><strong>'+i.name+'</strong><div class="val">'+(x?x.value+' '+i.unit:'待接入')+'</div><div class="muted">'+(x?'统计期：'+x.period:'暂无经过验证的官方数据')+'</div>'+(x?'<p><a href="'+x.source_url+'" target="_blank" rel="noopener">查看官方来源</a></p>':'')+'</div>'}).join('')}).catch(e=>{document.getElementById('meta').textContent='数据文件尚未生成，请运行 GitHub Actions';});</script></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="中国经济长期指标监测：2000年至今，按月查看国家统计局与广州官方历史数据、来源与修订记录">
+<title>中国经济历史监测 | 2000—至今</title>
+<link rel="stylesheet" href="./app.css">
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div>
+    <h1>中国经济 · 历史指标监测</h1>
+    <div class="sub">2000年至今 · 每月持续更新 · 全国宏观经济 + 广州快消观察</div>
+  </div>
+  <div class="right"><span class="pill">官方来源 · 历史留痕</span><div class="sub" style="margin-top:9px">最近生成：<span id="stamp">读取中</span></div></div>
+</header>
+<div class="stats">
+  <div class="stat"><div class="label">追踪指标</div><div class="num" id="series">—</div><div class="muted">覆盖经济主要领域</div></div>
+  <div class="stat"><div class="label">已核验统计期</div><div class="num" id="cnt">—</div><div class="muted">一项指标的一期为1条</div></div>
+  <div class="stat"><div class="label">存档历史版本</div><div class="num" id="archive">—</div><div class="muted">数据修订不覆盖旧值</div></div>
+  <div class="stat"><div class="label">历史观察起点</div><div class="num" id="start">2000</div><div class="muted">指标实际起点见详情</div></div>
+</div>
+<div class="layout">
+  <aside class="panel sidebar">
+    <h2>经济指标目录</h2><div class="muted" style="margin-bottom:12px">绿点表示已有官方历史数据</div>
+    <nav id="sidebar" aria-label="经济指标">正在加载指标目录…</nav>
+  </aside>
+  <div class="stack">
+    <section class="panel">
+      <div class="headline">
+        <div>
+          <div id="category" class="sub">—</div>
+          <h2 id="metricName" style="font-size:22px;margin:8px 0 0">指标加载中</h2>
+          <div class="bigvalue" id="headlineValue">—</div>
+          <div id="headlinePeriod" class="muted">—</div>
+          <div id="headlineSource" class="src"></div>
+        </div>
+        <div class="badge">记录官方统计期，不推测缺失值</div>
+      </div>
+      <div class="desc" id="metricNote" style="margin-top:15px"></div>
+      <div class="banner" id="warning">正在读取官方历史记录…</div>
+    </section>
+    <section class="panel">
+      <div class="toolbar">
+        <h2>历史趋势</h2>
+        <div class="actions"><button class="primary" id="download">导出所选历史数据 CSV ↓</button></div>
+      </div>
+      <div class="controls">
+        <label class="field">起始年份<select id="yearFrom"></select></label>
+        <label class="field">截止年份<select id="yearTo"></select></label>
+        <label class="field">筛选月份<select id="month">
+          <option value="all">所有月份/季度</option>
+          <option value="01">1月</option><option value="02">2月</option><option value="03">3月</option><option value="04">4月</option>
+          <option value="05">5月</option><option value="06">6月</option><option value="07">7月</option><option value="08">8月</option>
+          <option value="09">9月</option><option value="10">10月</option><option value="11">11月</option><option value="12">12月</option>
+        </select></label>
+      </div>
+      <div id="chart" class="chartwrap"><div class="noData" id="loading">正在读取…</div></div>
+      <p class="desc">“当月同比”“累计同比”“实际收入增速”是不同序列，不会混画；春节期间如1—2月合并发布，缺口保持空白。</p>
+    </section>
+    <div class="two">
+      <section class="panel">
+        <h2>历史覆盖情况</h2>
+        <div class="row-between"><div class="sub">首期：<strong id="firstPeriod">—</strong></div><div class="sub">末期：<strong id="lastPeriod">—</strong></div></div>
+        <div class="coverage"><div id="coverageBar" style="width:0%"></div></div>
+        <div class="muted" id="coverageText">—</div>
+      </section>
+      <section class="panel">
+        <h2>来源与数据口径</h2>
+        <div class="sub">已入库期数：<strong id="observed">0</strong></div>
+        <p class="muted">采集方式：<span id="sourceType">—</span></p>
+        <div class="desc">历史统计期不等于发布日；未核实的旧公报发布日期显示“未核实”，不会填写采集当天。</div>
+      </section>
+    </div>
+    <section class="panel">
+      <div class="toolbar"><h2 id="tableTitle">逐期历史明细</h2><span class="count" id="rowHint">—</span></div>
+      <div class="tablewrap"><table>
+        <thead><tr><th>统计期</th><th>官方数值</th><th>官方发布日期</th><th>统计口径</th><th>修订记录</th><th>出处</th><th>抓取日期</th></tr></thead>
+        <tbody id="tbody"><tr><td colspan="7">正在加载...</td></tr></tbody>
+      </table></div>
+      <div class="tablefoot"><div class="muted" id="showing">—</div><button id="more">加载更多</button></div>
+    </section>
+    <section class="panel foot">
+      <strong class="important">关于2000年起的历史数据</strong>
+      <p>本项目以2000年为监测时间轴起点，官方没有提供的时期不补零、不估算、不使用其他口径伪装；例如全国月度调查失业率2018年起公开发布，民间投资月度数据2012年起公开发布，全国统一住户调查收入序列2013年开始。</p>
+      <p>数据来源：<a href="https://data.stats.gov.cn/" target="_blank" rel="noopener">国家统计局发布库</a>、<a href="https://www.stats.gov.cn/" target="_blank" rel="noopener">国家统计局公报</a>。目前广州本地和部分结构性指标需完成官方历史公报映射后再入库。政策关联分析需另外建立可核验的政策事件索引。</p>
+    </section>
+  </div>
+</div>
+</div>
+<script src="./app.js" defer></script>
+</body></html>
