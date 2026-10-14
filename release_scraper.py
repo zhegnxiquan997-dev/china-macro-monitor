@@ -161,6 +161,13 @@ def collect_official_releases(catalog,retrieved_at,session=None):
             response=session.get(url,timeout=18)
             response.raise_for_status()
             rows=parse_article(url,response.text,mapping,retrieved_at)
+            if url in PINNED:
+                from bs4 import BeautifulSoup
+                soup=BeautifulSoup(response.text,"html.parser")
+                titles=[n.get_text(" ",strip=True)[:140] for n in soup.find_all("h1")[:3]]
+                LOG.info("Pinned source diagnostics: url=%s rows=%s title=%r h1=%r body_len=%d sample=%r",
+                         url,len(rows),soup.title.get_text(" ",strip=True)[:110] if soup.title else None,
+                         titles,len(soup.get_text(" ",strip=True)),soup.get_text(" ",strip=True)[:160])
             results.extend(rows)
             scanned+=1
         except Exception as error:
