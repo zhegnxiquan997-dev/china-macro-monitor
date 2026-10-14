@@ -1,0 +1,103 @@
+{
+  "full_backfill_attempted": true,
+  "status": {
+    "retail": {
+      "status": "fetch_failed",
+      "last_error": "HTTPError: 404 Client Error: Not Found for url: https://data.stats.gov.cn/dg/website/publicrelease/web/external/getEsDataByCidAndDt",
+      "checked_years": 0,
+      "fetched_observations": 0,
+      "checked_at": "2026-10-14T21:57:27+08:00"
+    },
+    "retail_ytd": {
+      "status": "fetch_failed",
+      "last_error": "HTTPError: 404 Client Error: Not Found for url: https://data.stats.gov.cn/dg/website/publicrelease/web/external/getEsDataByCidAndDt",
+      "checked_years": 0,
+      "fetched_observations": 0,
+      "checked_at": "2026-10-14T21:57:27+08:00"
+    },
+    "retail_value": {
+      "status": "fetch_failed",
+      "last_error": "HTTPError: 404 Client Error: Not Found for url: https://data.stats.gov.cn/dg/website/publicrelease/web/external/getEsDataByCidAndDt",
+      "checked_years": 0,
+      "fetched_observations": 0,
+      "checked_at": "2026-10-14T21:57:27+08:00"
+    },
+    "retail_ytd_value": {
+      "status": "fetch_failed",
+      "last_error": "HTTPError: 404 Client Error: Not Found for url: https://data.stats.gov.cn/dg/website/publicrelease/web/external/getEsDataByCidAndDt",
+      "checked_years": 0,
+      "fetched_observations": 0,
+      "checked_at": "2026-10-14T21:57:27+08:00"
+    },
+    "services": {
+      "status": "official_release_import_pending",
+      "last_error": null,
+      "checked_at": "2026-10-14T21:57:27+08:00"
+    },
+    "catering": {
+      "status": "official_release_import_pending",
+      "last_error": null,
+      "checked_at": "2026-10-14T21:57:27+08:00"
+    },
+    "income": {
+      "status": "official_release_import_pending",
+      "last_error": null,
+      "checked_at": "2026-10-14T21:57:27+08:00"
+    },
+    "private_investment": {
+      "status": "fetch_failed",
+      "last_error": "HTTPError: 404 Client Error: Not Found for url: https://data.stats.gov.cn/dg/website/publicrelease/web/external/getEsDataByCidAndDt",
+      "checked_years": 0,
+      "fetched_observations": 0,
+      "checked_at": "2026-10-14T21:57:27+08:00"
+    },
+    "real_estate_investment": {
+      "status": "fetch_failed",
+      "last_error": "HTTPError: 404 Client Error: Not Found for url: https://data.stats.gov.cn/dg/website/publicrelease/web/external/getEsDataByCidAndDt",
+      "checked_years": 0,
+      "fetched_observations": 0,
+      "checked_at": "2026-10-14T21:57:27+08:00"
+    },
+    "real_estate_investment_value": {
+      "status": "fetch_failed",
+      "last_error": "HTTPError: 404 Client Error: Not Found for url: https://data.stats.gov.cn/dg/website/publicrelease/web/external/getEsDataByCidAndDt",
+      "checked_years": 0,
+      "fetched_observations": 0,
+      "checked_at": "2026-10-14T21:57:27+08:00"
+    },
+    "real_estate_sales": {
+      "status": "official_release_import_pending",
+      "last_error": null,
+      "checked_at": "2026-10-14T21:57:27+08:00"
+    },
+    "guangzhou_new_home": {
+      "status": "official_release_import_pending",
+      "last_error": null,
+      "checked_at": "2026-10-14T21:57:27+08:00"
+    },
+    "guangzhou_second_home": {
+      "status": "official_release_import_pending",
+      "last_error": null,
+      "checked_at": "2026-10-14T21:57:27+08:00"
+    },
+    "industrial_profit": {
+      "status": "official_release_import_pending",
+      "last_error": null,
+      "checked_at": "2026-10-14T21:57:27+08:00"
+    },
+    "unemployment": {
+      "status": "fetch_failed",
+      "last_error": "HTTPError: 404 Client Error: Not Found for url: https://data.stats.gov.cn/dg/website/publicrelease/web/external/getEsDataByCidAndDt",
+      "checked_years": 0,
+      "fetched_observations": 0,
+      "checked_at": "2026-10-14T21:57:27+08:00"
+    },
+    "guangzhou_retail": {
+      "status": "official_release_import_pending",
+      "last_error": null,
+      "checked_at": "2026-10-14T21:57:27+08:00"
+    }
+  },
+  "last_run": "2026-10-14T21:57:27+08:00",
+  "last_new_records": 0
+}
