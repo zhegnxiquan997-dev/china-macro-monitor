@@ -16,6 +16,11 @@ jobs:
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
+      - name: 读取最新主分支历史库
+        run: |
+          git fetch origin main
+          git checkout main
+          git reset --hard origin/main
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
