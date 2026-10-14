@@ -22,7 +22,7 @@ from zoneinfo import ZoneInfo
 ROOT = pathlib.Path(__file__).resolve().parent
 BASE = "https://data.stats.gov.cn/dg/website"
 HOME = BASE + "/page.html#/pc/national/home"
-API = BASE + "/publicrelease/web/external/getEsDataByCidAndDt"
+API = BASE + "/publicrelease/web/external/stream/esData"
 LOG = logging.getLogger("macro")
 PERIOD_RE = re.compile(r"^20\d{2}(?:-(?:0[1-9]|1[0-2])|-Q[1-4])?$")
 MONTH_CODE_RE = re.compile(r"^(20\d{2})(0[1-9]|1[0-2])(?:MM)?$")
@@ -140,10 +140,10 @@ def fetch_year(session, metric, year, fetched_at):
         "cid": cid,
         "indicatorIds": [indicator],
         "daCatalogId": "",
-        "das": [{"text": "national", "value": "000000000000"}],
-        "showType": 1,
-        "dts": [f"{year}{month:02d}MM" for month in range(1, 13)],
-        "rootId": "",
+        "das": [{"text": "全国", "value": "000000000000"}],
+        "showType": "1",
+        "dts": [f"{year}01MM-{year}12MM"],
+        "rootId": "fc982599aa684be7969d7b90b1bd0e84",
     }
     response = session.post(API, json=request, timeout=25, headers={
         "Content-Type": "application/json;charset=UTF-8"
@@ -152,6 +152,8 @@ def fetch_year(session, metric, year, fetched_at):
     parsed = response.json()
     if not isinstance(parsed, dict):
         raise RuntimeError("unexpected official JSON type")
+    if parsed.get("state") not in (20000, "20000", None) or parsed.get("success") is False:
+        raise RuntimeError(f"NBS API rejected request: {parsed.get('state')} {parsed.get('message')}")
     return parse_api_response(parsed, metric, fetched_at)
 
 
