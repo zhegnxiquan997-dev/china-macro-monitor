@@ -185,6 +185,66 @@
       "start_year": 2000,
       "source": "official_release",
       "note": "广州统计局官方发布数据逐步回填"
+    },
+    {
+      "id": "retail_annual_value",
+      "name": "社会消费品零售总额年度金额",
+      "group": "消费",
+      "unit": "亿元",
+      "frequency": "annual",
+      "kind": "annual_amount",
+      "start_year": 2000,
+      "source": "nbs_api",
+      "code": "d5b51c4a56d646b3b3f00f2c9e31a217:008350880eb14928acc53fe20b295415",
+      "note": "年度统计总量，与月度累计值分开；历史统计口径变动应参照年度公报"
+    },
+    {
+      "id": "income_annual_value",
+      "name": "全国居民人均可支配收入年度金额",
+      "group": "居民收入",
+      "unit": "元",
+      "frequency": "annual",
+      "kind": "annual_amount",
+      "start_year": 2013,
+      "source": "nbs_api",
+      "code": "d153132154a549a78363017ef74ca784:305bba1e881e413b91f32a06a4be65fd",
+      "note": "统一全国居民可支配收入序列2013年起可比"
+    },
+    {
+      "id": "income_annual_nominal",
+      "name": "全国居民可支配收入年度名义增速",
+      "group": "居民收入",
+      "unit": "%",
+      "frequency": "annual",
+      "kind": "annual_nominal_yoy",
+      "start_year": 2013,
+      "source": "nbs_api",
+      "code": "d153132154a549a78363017ef74ca784:c6529a19138449da88a4ba2b75ff6259",
+      "note": "名义增速！不能当成扣除价格因素的实际收入增速"
+    },
+    {
+      "id": "industrial_profit_annual_value",
+      "name": "规上工业企业利润年度总额",
+      "group": "企业与就业",
+      "unit": "亿元",
+      "frequency": "annual",
+      "kind": "annual_amount",
+      "start_year": 2000,
+      "source": "nbs_api",
+      "code": "1a164a4246d64c4f897bd1d29a05fb4c:19c5ad18fbf543758fb9d0f72721d3a4",
+      "note": "年度金额，不能直接等同官方公布的可比口径利润增速"
+    },
+    {
+      "id": "private_investment_annual_nominal",
+      "name": "民间投资年度名义增速",
+      "group": "民间投资",
+      "unit": "%",
+      "frequency": "annual",
+      "kind": "annual_nominal_yoy",
+      "start_year": 2012,
+      "source": "nbs_api",
+      "code": "975bf8699a3a433b8d1d5e42e89525ca:14ca2be843344896b2aceef61584c5de",
+      "note": "来自年度统计，和月度累计增速分开"
     }
   ]
 }
