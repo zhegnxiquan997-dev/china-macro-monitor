@@ -1,0 +1,20 @@
+name: 宏观指标精确目录检查
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/indicator-discovery.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install requests
+      - run: python nbs_exact_probe.py
