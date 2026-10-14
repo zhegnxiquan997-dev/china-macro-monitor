@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-14T22:21:51+08:00",
+  "generated_at": "2026-10-14T22:22:49+08:00",
   "history_start_year": 2000,
   "indicators": [
     {
@@ -271,6 +271,91 @@
     }
   ],
   "latest": {
+    "catering": {
+      "indicator_id": "catering",
+      "period": "2026-08",
+      "value": 2.4,
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "ytd_yoy",
+      "source_url": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965311.html",
+      "source_title": "2026年1—8月份社会消费品零售总额",
+      "source_indicator": "",
+      "official_release_date": "2026-09-15",
+      "release_date_status": "已核验官方公报",
+      "retrieved_at": "2026-10-14T22:22:49+08:00",
+      "method": "official_release_manual_import",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:22:49+08:00"
+    },
+    "guangzhou_catering": {
+      "indicator_id": "guangzhou_catering",
+      "period": "2026-08",
+      "value": 4.9,
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "ytd_yoy",
+      "source_url": "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_11011965.html",
+      "source_title": "2026年1—8月广州经济运行情况",
+      "source_indicator": "",
+      "official_release_date": "2026-09-22",
+      "release_date_status": "已核验官方公报",
+      "retrieved_at": "2026-10-14T22:22:49+08:00",
+      "method": "official_release_manual_import",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:22:49+08:00"
+    },
+    "guangzhou_private_investment": {
+      "indicator_id": "guangzhou_private_investment",
+      "period": "2026-08",
+      "value": 4.6,
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "ytd_yoy",
+      "source_url": "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_11011965.html",
+      "source_title": "2026年1—8月广州经济运行情况",
+      "source_indicator": "",
+      "official_release_date": "2026-09-22",
+      "release_date_status": "已核验官方公报",
+      "retrieved_at": "2026-10-14T22:22:49+08:00",
+      "method": "official_release_manual_import",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:22:49+08:00"
+    },
+    "guangzhou_retail": {
+      "indicator_id": "guangzhou_retail",
+      "period": "2026-08",
+      "value": 2.7,
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "ytd_yoy",
+      "source_url": "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_11011965.html",
+      "source_title": "2026年1—8月广州经济运行情况",
+      "source_indicator": "",
+      "official_release_date": "2026-09-22",
+      "release_date_status": "已核验官方公报",
+      "retrieved_at": "2026-10-14T22:22:49+08:00",
+      "method": "official_release_manual_import",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:22:49+08:00"
+    },
+    "income": {
+      "indicator_id": "income",
+      "period": "2026-Q2",
+      "value": 4.2,
+      "unit": "%",
+      "frequency": "quarterly",
+      "kind": "ytd_real_yoy",
+      "source_url": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964129.html",
+      "source_title": "2026年上半年居民收入和消费支出情况",
+      "source_indicator": "",
+      "official_release_date": "2026-07-15",
+      "release_date_status": "已核验官方公报",
+      "retrieved_at": "2026-10-14T22:22:49+08:00",
+      "method": "official_release_manual_import",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:22:49+08:00"
+    },
     "income_annual_nominal": {
       "indicator_id": "income_annual_nominal",
       "period": "2025",
@@ -304,6 +389,23 @@
       "method": "nbs_new_release_api",
       "version": 1,
       "first_observed_at": "2026-10-14T22:09:24+08:00"
+    },
+    "industrial_profit": {
+      "indicator_id": "industrial_profit",
+      "period": "2026-08",
+      "value": 15.7,
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "ytd_yoy",
+      "source_url": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+      "source_title": "2026年1—8月份全国规模以上工业企业利润",
+      "source_indicator": "",
+      "official_release_date": "2026-09-28",
+      "release_date_status": "已核验官方公报",
+      "retrieved_at": "2026-10-14T22:22:49+08:00",
+      "method": "official_release_manual_import",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:22:49+08:00"
     },
     "industrial_profit_annual_value": {
       "indicator_id": "industrial_profit_annual_value",
@@ -390,6 +492,23 @@
       "version": 1,
       "first_observed_at": "2026-10-14T21:59:30+08:00"
     },
+    "real_estate_sales": {
+      "indicator_id": "real_estate_sales",
+      "period": "2026-08",
+      "value": -12.1,
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "ytd_yoy",
+      "source_url": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965310.html",
+      "source_title": "2026年1—8月份全国房地产市场基本情况",
+      "source_indicator": "",
+      "official_release_date": "2026-09-15",
+      "release_date_status": "已核验官方公报",
+      "retrieved_at": "2026-10-14T22:22:49+08:00",
+      "method": "official_release_manual_import",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:22:49+08:00"
+    },
     "retail": {
       "indicator_id": "retail",
       "period": "2026-08",
@@ -475,6 +594,23 @@
       "version": 1,
       "first_observed_at": "2026-10-14T21:59:30+08:00"
     },
+    "services": {
+      "indicator_id": "services",
+      "period": "2026-08",
+      "value": 4.9,
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "ytd_yoy",
+      "source_url": "https://www.stats.gov.cn/sj/zxfbhjd/202609/t20260915_1965307.html",
+      "source_title": "2026年8月国民经济运行情况",
+      "source_indicator": "",
+      "official_release_date": "2026-09-15",
+      "release_date_status": "已核验官方公报",
+      "retrieved_at": "2026-10-14T22:22:49+08:00",
+      "method": "official_release_manual_import",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:22:49+08:00"
+    },
     "unemployment": {
       "indicator_id": "unemployment",
       "period": "2026-08",
@@ -494,6 +630,91 @@
     }
   },
   "history": [
+    {
+      "indicator_id": "catering",
+      "period": "2026-08",
+      "value": 2.4,
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "ytd_yoy",
+      "source_url": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965311.html",
+      "source_title": "2026年1—8月份社会消费品零售总额",
+      "source_indicator": "",
+      "official_release_date": "2026-09-15",
+      "release_date_status": "已核验官方公报",
+      "retrieved_at": "2026-10-14T22:22:49+08:00",
+      "method": "official_release_manual_import",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:22:49+08:00"
+    },
+    {
+      "indicator_id": "guangzhou_catering",
+      "period": "2026-08",
+      "value": 4.9,
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "ytd_yoy",
+      "source_url": "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_11011965.html",
+      "source_title": "2026年1—8月广州经济运行情况",
+      "source_indicator": "",
+      "official_release_date": "2026-09-22",
+      "release_date_status": "已核验官方公报",
+      "retrieved_at": "2026-10-14T22:22:49+08:00",
+      "method": "official_release_manual_import",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:22:49+08:00"
+    },
+    {
+      "indicator_id": "guangzhou_private_investment",
+      "period": "2026-08",
+      "value": 4.6,
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "ytd_yoy",
+      "source_url": "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_11011965.html",
+      "source_title": "2026年1—8月广州经济运行情况",
+      "source_indicator": "",
+      "official_release_date": "2026-09-22",
+      "release_date_status": "已核验官方公报",
+      "retrieved_at": "2026-10-14T22:22:49+08:00",
+      "method": "official_release_manual_import",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:22:49+08:00"
+    },
+    {
+      "indicator_id": "guangzhou_retail",
+      "period": "2026-08",
+      "value": 2.7,
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "ytd_yoy",
+      "source_url": "https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_11011965.html",
+      "source_title": "2026年1—8月广州经济运行情况",
+      "source_indicator": "",
+      "official_release_date": "2026-09-22",
+      "release_date_status": "已核验官方公报",
+      "retrieved_at": "2026-10-14T22:22:49+08:00",
+      "method": "official_release_manual_import",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:22:49+08:00"
+    },
+    {
+      "indicator_id": "income",
+      "period": "2026-Q2",
+      "value": 4.2,
+      "unit": "%",
+      "frequency": "quarterly",
+      "kind": "ytd_real_yoy",
+      "source_url": "https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964129.html",
+      "source_title": "2026年上半年居民收入和消费支出情况",
+      "source_indicator": "",
+      "official_release_date": "2026-07-15",
+      "release_date_status": "已核验官方公报",
+      "retrieved_at": "2026-10-14T22:22:49+08:00",
+      "method": "official_release_manual_import",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:22:49+08:00"
+    },
     {
       "indicator_id": "income_annual_nominal",
       "period": "2013",
@@ -935,6 +1156,23 @@
       "method": "nbs_new_release_api",
       "version": 1,
       "first_observed_at": "2026-10-14T22:09:24+08:00"
+    },
+    {
+      "indicator_id": "industrial_profit",
+      "period": "2026-08",
+      "value": 15.7,
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "ytd_yoy",
+      "source_url": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
+      "source_title": "2026年1—8月份全国规模以上工业企业利润",
+      "source_indicator": "",
+      "official_release_date": "2026-09-28",
+      "release_date_status": "已核验官方公报",
+      "retrieved_at": "2026-10-14T22:22:49+08:00",
+      "method": "official_release_manual_import",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:22:49+08:00"
     },
     {
       "indicator_id": "industrial_profit_annual_value",
@@ -13889,6 +14127,23 @@
       "method": "nbs_new_release_api",
       "version": 1,
       "first_observed_at": "2026-10-14T21:59:30+08:00"
+    },
+    {
+      "indicator_id": "real_estate_sales",
+      "period": "2026-08",
+      "value": -12.1,
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "ytd_yoy",
+      "source_url": "https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965310.html",
+      "source_title": "2026年1—8月份全国房地产市场基本情况",
+      "source_indicator": "",
+      "official_release_date": "2026-09-15",
+      "release_date_status": "已核验官方公报",
+      "retrieved_at": "2026-10-14T22:22:49+08:00",
+      "method": "official_release_manual_import",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:22:49+08:00"
     },
     {
       "indicator_id": "retail",
@@ -34563,6 +34818,23 @@
       "first_observed_at": "2026-10-14T21:59:30+08:00"
     },
     {
+      "indicator_id": "services",
+      "period": "2026-08",
+      "value": 4.9,
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "ytd_yoy",
+      "source_url": "https://www.stats.gov.cn/sj/zxfbhjd/202609/t20260915_1965307.html",
+      "source_title": "2026年8月国民经济运行情况",
+      "source_indicator": "",
+      "official_release_date": "2026-09-15",
+      "release_date_status": "已核验官方公报",
+      "retrieved_at": "2026-10-14T22:22:49+08:00",
+      "method": "official_release_manual_import",
+      "version": 1,
+      "first_observed_at": "2026-10-14T22:22:49+08:00"
+    },
+    {
       "indicator_id": "unemployment",
       "period": "2018-01",
       "value": 5.0,
@@ -36366,26 +36638,26 @@
       "last_error": null
     },
     "services": {
-      "first_period": null,
-      "last_period": null,
-      "unique_periods": 0,
-      "versions": 0,
+      "first_period": "2026-08",
+      "last_period": "2026-08",
+      "unique_periods": 1,
+      "versions": 1,
       "status": "official_release_import_pending",
       "last_error": null
     },
     "catering": {
-      "first_period": null,
-      "last_period": null,
-      "unique_periods": 0,
-      "versions": 0,
+      "first_period": "2026-08",
+      "last_period": "2026-08",
+      "unique_periods": 1,
+      "versions": 1,
       "status": "official_release_import_pending",
       "last_error": null
     },
     "income": {
-      "first_period": null,
-      "last_period": null,
-      "unique_periods": 0,
-      "versions": 0,
+      "first_period": "2026-Q2",
+      "last_period": "2026-Q2",
+      "unique_periods": 1,
+      "versions": 1,
       "status": "official_release_import_pending",
       "last_error": null
     },
@@ -36414,10 +36686,10 @@
       "last_error": null
     },
     "real_estate_sales": {
-      "first_period": null,
-      "last_period": null,
-      "unique_periods": 0,
-      "versions": 0,
+      "first_period": "2026-08",
+      "last_period": "2026-08",
+      "unique_periods": 1,
+      "versions": 1,
       "status": "official_release_import_pending",
       "last_error": null
     },
@@ -36438,10 +36710,10 @@
       "last_error": null
     },
     "industrial_profit": {
-      "first_period": null,
-      "last_period": null,
-      "unique_periods": 0,
-      "versions": 0,
+      "first_period": "2026-08",
+      "last_period": "2026-08",
+      "unique_periods": 1,
+      "versions": 1,
       "status": "official_release_import_pending",
       "last_error": null
     },
@@ -36454,10 +36726,10 @@
       "last_error": null
     },
     "guangzhou_retail": {
-      "first_period": null,
-      "last_period": null,
-      "unique_periods": 0,
-      "versions": 0,
+      "first_period": "2026-08",
+      "last_period": "2026-08",
+      "unique_periods": 1,
+      "versions": 1,
       "status": "official_release_import_pending",
       "last_error": null
     },
@@ -36502,18 +36774,18 @@
       "last_error": null
     },
     "guangzhou_catering": {
-      "first_period": null,
-      "last_period": null,
-      "unique_periods": 0,
-      "versions": 0,
+      "first_period": "2026-08",
+      "last_period": "2026-08",
+      "unique_periods": 1,
+      "versions": 1,
       "status": "official_release_import_pending",
       "last_error": null
     },
     "guangzhou_private_investment": {
-      "first_period": null,
-      "last_period": null,
-      "unique_periods": 0,
-      "versions": 0,
+      "first_period": "2026-08",
+      "last_period": "2026-08",
+      "unique_periods": 1,
+      "versions": 1,
       "status": "official_release_import_pending",
       "last_error": null
     }
@@ -36524,145 +36796,145 @@
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 26,
-      "checked_at": "2026-10-14T22:21:51+08:00"
+      "checked_at": "2026-10-14T22:22:49+08:00"
     },
     "retail_ytd": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 29,
-      "checked_at": "2026-10-14T22:21:51+08:00"
+      "checked_at": "2026-10-14T22:22:49+08:00"
     },
     "retail_value": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 26,
-      "checked_at": "2026-10-14T22:21:51+08:00"
+      "checked_at": "2026-10-14T22:22:49+08:00"
     },
     "retail_ytd_value": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 29,
-      "checked_at": "2026-10-14T22:21:51+08:00"
+      "checked_at": "2026-10-14T22:22:49+08:00"
     },
     "services": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-10-14T22:21:51+08:00"
+      "checked_at": "2026-10-14T22:22:49+08:00"
     },
     "catering": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-10-14T22:21:51+08:00"
+      "checked_at": "2026-10-14T22:22:49+08:00"
     },
     "income": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-10-14T22:21:51+08:00"
+      "checked_at": "2026-10-14T22:22:49+08:00"
     },
     "private_investment": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 29,
-      "checked_at": "2026-10-14T22:21:51+08:00"
+      "checked_at": "2026-10-14T22:22:49+08:00"
     },
     "real_estate_investment": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 29,
-      "checked_at": "2026-10-14T22:21:51+08:00"
+      "checked_at": "2026-10-14T22:22:49+08:00"
     },
     "real_estate_investment_value": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 29,
-      "checked_at": "2026-10-14T22:21:51+08:00"
+      "checked_at": "2026-10-14T22:22:49+08:00"
     },
     "real_estate_sales": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-10-14T22:21:51+08:00"
+      "checked_at": "2026-10-14T22:22:49+08:00"
     },
     "guangzhou_new_home": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-10-14T22:21:51+08:00"
+      "checked_at": "2026-10-14T22:22:49+08:00"
     },
     "guangzhou_second_home": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-10-14T22:21:51+08:00"
+      "checked_at": "2026-10-14T22:22:49+08:00"
     },
     "industrial_profit": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-10-14T22:21:51+08:00"
+      "checked_at": "2026-10-14T22:22:49+08:00"
     },
     "unemployment": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 32,
-      "checked_at": "2026-10-14T22:21:51+08:00"
+      "checked_at": "2026-10-14T22:22:49+08:00"
     },
     "guangzhou_retail": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-10-14T22:21:51+08:00"
+      "checked_at": "2026-10-14T22:22:49+08:00"
     },
     "retail_annual_value": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 2,
-      "checked_at": "2026-10-14T22:21:51+08:00"
+      "checked_at": "2026-10-14T22:22:49+08:00"
     },
     "income_annual_value": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 2,
-      "checked_at": "2026-10-14T22:21:51+08:00"
+      "checked_at": "2026-10-14T22:22:49+08:00"
     },
     "income_annual_nominal": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 2,
-      "checked_at": "2026-10-14T22:21:51+08:00"
+      "checked_at": "2026-10-14T22:22:49+08:00"
     },
     "industrial_profit_annual_value": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 2,
-      "checked_at": "2026-10-14T22:21:51+08:00"
+      "checked_at": "2026-10-14T22:22:49+08:00"
     },
     "private_investment_annual_nominal": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 2,
-      "checked_at": "2026-10-14T22:21:51+08:00"
+      "checked_at": "2026-10-14T22:22:49+08:00"
     },
     "guangzhou_catering": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-10-14T22:21:51+08:00"
+      "checked_at": "2026-10-14T22:22:49+08:00"
     },
     "guangzhou_private_investment": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-10-14T22:21:51+08:00"
+      "checked_at": "2026-10-14T22:22:49+08:00"
     }
   },
-  "data_count": 2108,
-  "archive_versions": 2108,
+  "data_count": 2116,
+  "archive_versions": 2116,
   "full_backfill_this_run": false,
   "description": "发布日和统计期分开。历史官方发布日未知时留空，不用抓取日冒充。"
 }
