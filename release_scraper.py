@@ -54,7 +54,7 @@ METRICS = {
     "nbs_services":("services",re.compile(r"其中服务零售额(?:同比)?"+VALUE)),
     "nbs_income":("income",re.compile(r"全国居民人均可支配收入[^。]{0,160}?扣除价格因素，实际"+VALUE)),
     "gz_retail":("guangzhou_retail",re.compile(r"(?:全市实现|全市|实现)社会消费品零售总额[\d,.]+亿元，同比"+VALUE)),
-    "gz_catering":("guangzhou_catering",re.compile(r"(?:分消费类型看，)?商品零售(?:增长|下降)[\d.]+%，餐饮收入"+VALUE)),
+    "gz_catering":("guangzhou_catering",re.compile(r"(?:分消费类型看，)?商品零售(?:额)?(?:增长|下降)[\d.]+%[，；]餐饮收入"+VALUE)),
     "gz_private":("guangzhou_private_investment",re.compile(r"民间投资(?:总体增势平稳，)?同比"+VALUE)),
 }
 TOPIC = {
