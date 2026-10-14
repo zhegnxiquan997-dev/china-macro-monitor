@@ -32,6 +32,11 @@ jobs:
     steps:
       - name: 获取代码
         uses: actions/checkout@v4
+      - name: 读取最新主分支历史库
+        run: |
+          git fetch origin main
+          git checkout main
+          git reset --hard origin/main
       - name: 配置 Python
         uses: actions/setup-python@v5
         with:
