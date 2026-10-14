@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-14T22:14:50+08:00",
+  "generated_at": "2026-10-14T22:21:51+08:00",
   "history_start_year": 2000,
   "indicators": [
     {
@@ -246,6 +246,28 @@
       "source": "nbs_api",
       "code": "975bf8699a3a433b8d1d5e42e89525ca:14ca2be843344896b2aceef61584c5de",
       "note": "来自年度统计，和月度累计增速分开"
+    },
+    {
+      "id": "guangzhou_catering",
+      "name": "广州餐饮收入累计同比",
+      "group": "广州快消",
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "ytd_yoy",
+      "start_year": 2000,
+      "source": "official_release",
+      "note": "广州本地餐饮渠道需求观察指标，逐期以广州市统计局公布数据为准"
+    },
+    {
+      "id": "guangzhou_private_investment",
+      "name": "广州民间固定资产投资累计同比",
+      "group": "广州快消",
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "ytd_yoy",
+      "start_year": 2012,
+      "source": "official_release",
+      "note": "民间投资累计同比；与全国数据单独比较"
     }
   ],
   "latest": {
@@ -36478,143 +36500,169 @@
       "versions": 13,
       "status": "ok",
       "last_error": null
+    },
+    "guangzhou_catering": {
+      "first_period": null,
+      "last_period": null,
+      "unique_periods": 0,
+      "versions": 0,
+      "status": "official_release_import_pending",
+      "last_error": null
+    },
+    "guangzhou_private_investment": {
+      "first_period": null,
+      "last_period": null,
+      "unique_periods": 0,
+      "versions": 0,
+      "status": "official_release_import_pending",
+      "last_error": null
     }
   },
   "run_status": {
     "retail": {
       "status": "ok",
       "last_error": null,
-      "checked_years": 27,
-      "fetched_observations": 290,
-      "checked_at": "2026-10-14T22:14:50+08:00"
+      "checked_years": 3,
+      "fetched_observations": 26,
+      "checked_at": "2026-10-14T22:21:51+08:00"
     },
     "retail_ytd": {
       "status": "ok",
       "last_error": null,
-      "checked_years": 27,
-      "fetched_observations": 305,
-      "checked_at": "2026-10-14T22:14:50+08:00"
+      "checked_years": 3,
+      "fetched_observations": 29,
+      "checked_at": "2026-10-14T22:21:51+08:00"
     },
     "retail_value": {
       "status": "ok",
       "last_error": null,
-      "checked_years": 27,
-      "fetched_observations": 290,
-      "checked_at": "2026-10-14T22:14:50+08:00"
+      "checked_years": 3,
+      "fetched_observations": 26,
+      "checked_at": "2026-10-14T22:21:51+08:00"
     },
     "retail_ytd_value": {
       "status": "ok",
       "last_error": null,
-      "checked_years": 27,
-      "fetched_observations": 305,
-      "checked_at": "2026-10-14T22:14:50+08:00"
+      "checked_years": 3,
+      "fetched_observations": 29,
+      "checked_at": "2026-10-14T22:21:51+08:00"
     },
     "services": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-10-14T22:14:50+08:00"
+      "checked_at": "2026-10-14T22:21:51+08:00"
     },
     "catering": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-10-14T22:14:50+08:00"
+      "checked_at": "2026-10-14T22:21:51+08:00"
     },
     "income": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-10-14T22:14:50+08:00"
+      "checked_at": "2026-10-14T22:21:51+08:00"
     },
     "private_investment": {
       "status": "ok",
       "last_error": null,
-      "checked_years": 15,
-      "fetched_observations": 160,
-      "checked_at": "2026-10-14T22:14:50+08:00"
+      "checked_years": 3,
+      "fetched_observations": 29,
+      "checked_at": "2026-10-14T22:21:51+08:00"
     },
     "real_estate_investment": {
       "status": "ok",
       "last_error": null,
-      "checked_years": 27,
-      "fetched_observations": 293,
-      "checked_at": "2026-10-14T22:14:50+08:00"
+      "checked_years": 3,
+      "fetched_observations": 29,
+      "checked_at": "2026-10-14T22:21:51+08:00"
     },
     "real_estate_investment_value": {
       "status": "ok",
       "last_error": null,
-      "checked_years": 27,
-      "fetched_observations": 293,
-      "checked_at": "2026-10-14T22:14:50+08:00"
+      "checked_years": 3,
+      "fetched_observations": 29,
+      "checked_at": "2026-10-14T22:21:51+08:00"
     },
     "real_estate_sales": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-10-14T22:14:50+08:00"
+      "checked_at": "2026-10-14T22:21:51+08:00"
     },
     "guangzhou_new_home": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-10-14T22:14:50+08:00"
+      "checked_at": "2026-10-14T22:21:51+08:00"
     },
     "guangzhou_second_home": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-10-14T22:14:50+08:00"
+      "checked_at": "2026-10-14T22:21:51+08:00"
     },
     "industrial_profit": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-10-14T22:14:50+08:00"
+      "checked_at": "2026-10-14T22:21:51+08:00"
     },
     "unemployment": {
       "status": "ok",
       "last_error": null,
-      "checked_years": 9,
-      "fetched_observations": 104,
-      "checked_at": "2026-10-14T22:14:50+08:00"
+      "checked_years": 3,
+      "fetched_observations": 32,
+      "checked_at": "2026-10-14T22:21:51+08:00"
     },
     "guangzhou_retail": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-10-14T22:14:50+08:00"
+      "checked_at": "2026-10-14T22:21:51+08:00"
     },
     "retail_annual_value": {
       "status": "ok",
       "last_error": null,
-      "checked_years": 27,
-      "fetched_observations": 26,
-      "checked_at": "2026-10-14T22:14:50+08:00"
+      "checked_years": 3,
+      "fetched_observations": 2,
+      "checked_at": "2026-10-14T22:21:51+08:00"
     },
     "income_annual_value": {
       "status": "ok",
       "last_error": null,
-      "checked_years": 14,
-      "fetched_observations": 13,
-      "checked_at": "2026-10-14T22:14:50+08:00"
+      "checked_years": 3,
+      "fetched_observations": 2,
+      "checked_at": "2026-10-14T22:21:51+08:00"
     },
     "income_annual_nominal": {
       "status": "ok",
       "last_error": null,
-      "checked_years": 14,
-      "fetched_observations": 13,
-      "checked_at": "2026-10-14T22:14:50+08:00"
+      "checked_years": 3,
+      "fetched_observations": 2,
+      "checked_at": "2026-10-14T22:21:51+08:00"
     },
     "industrial_profit_annual_value": {
       "status": "ok",
       "last_error": null,
-      "checked_years": 27,
-      "fetched_observations": 3,
-      "checked_at": "2026-10-14T22:14:50+08:00"
+      "checked_years": 3,
+      "fetched_observations": 2,
+      "checked_at": "2026-10-14T22:21:51+08:00"
     },
     "private_investment_annual_nominal": {
       "status": "ok",
       "last_error": null,
-      "checked_years": 15,
-      "fetched_observations": 13,
-      "checked_at": "2026-10-14T22:14:50+08:00"
+      "checked_years": 3,
+      "fetched_observations": 2,
+      "checked_at": "2026-10-14T22:21:51+08:00"
+    },
+    "guangzhou_catering": {
+      "status": "official_release_import_pending",
+      "last_error": null,
+      "checked_at": "2026-10-14T22:21:51+08:00"
+    },
+    "guangzhou_private_investment": {
+      "status": "official_release_import_pending",
+      "last_error": null,
+      "checked_at": "2026-10-14T22:21:51+08:00"
     }
   },
   "data_count": 2108,
   "archive_versions": 2108,
-  "full_backfill_this_run": true,
+  "full_backfill_this_run": false,
   "description": "发布日和统计期分开。历史官方发布日未知时留空，不用抓取日冒充。"
 }
