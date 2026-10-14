@@ -1,1 +1,9 @@
 indicator_id,period,value,source_url,source_title,published_at
+services,2026-08,4.9,https://www.stats.gov.cn/sj/zxfbhjd/202609/t20260915_1965307.html,2026年8月国民经济运行情况,2026-09-15
+catering,2026-08,2.4,https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965311.html,2026年1—8月份社会消费品零售总额,2026-09-15
+income,2026-Q2,4.2,https://www.stats.gov.cn/sj/zxfbhjd/202607/t20260715_1964129.html,2026年上半年居民收入和消费支出情况,2026-07-15
+real_estate_sales,2026-08,-12.1,https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965310.html,2026年1—8月份全国房地产市场基本情况,2026-09-15
+industrial_profit,2026-08,15.7,https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html,2026年1—8月份全国规模以上工业企业利润,2026-09-28
+guangzhou_retail,2026-08,2.7,https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_11011965.html,2026年1—8月广州经济运行情况,2026-09-22
+guangzhou_catering,2026-08,4.9,https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_11011965.html,2026年1—8月广州经济运行情况,2026-09-22
+guangzhou_private_investment,2026-08,4.6,https://tjj.gz.gov.cn/stats_newtjyw/sjjd/content/post_11011965.html,2026年1—8月广州经济运行情况,2026-09-22
