@@ -31,6 +31,15 @@ class ReleaseTests(unittest.TestCase):
   row=parse_article("https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",doc,CFG,STAMP)
   self.assertEqual((row[0]["indicator_id"],row[0]["period"],row[0]["value"]),("industrial_profit","2026-08",15.7))
 
+ def test_service_retail_excludes_online_retail(self):
+  doc=html("8月份国民经济运行平稳、发展向新向优",
+      "1—8月份，社会消费商品和服务零售总额同比增长2.5%，其中服务零售额增长4.9%。"
+      "1—8月份，全国网上商品和服务零售额同比增长4.6%，其中网上服务零售额增长5.1%。",
+      "2026-09-15")
+  rows=parse_article("https://www.stats.gov.cn/sj/zxfbhjd/202609/t20260915_1965307.html",doc,CFG,STAMP)
+  self.assertEqual([(r["indicator_id"],r["period"],r["value"]) for r in rows],
+                   [("services","2026-08",4.9)])
+
  def test_housing(self):
   doc=html("2026年1—8月份全国房地产市场基本情况",
       "1—8月份，新建商品房销售面积49880万平方米，同比下降12.1%。")
