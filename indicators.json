@@ -245,6 +245,28 @@
       "source": "nbs_api",
       "code": "975bf8699a3a433b8d1d5e42e89525ca:14ca2be843344896b2aceef61584c5de",
       "note": "来自年度统计，和月度累计增速分开"
+    },
+    {
+      "id": "guangzhou_catering",
+      "name": "广州餐饮收入累计同比",
+      "group": "广州快消",
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "ytd_yoy",
+      "start_year": 2000,
+      "source": "official_release",
+      "note": "广州本地餐饮渠道需求观察指标，逐期以广州市统计局公布数据为准"
+    },
+    {
+      "id": "guangzhou_private_investment",
+      "name": "广州民间固定资产投资累计同比",
+      "group": "广州快消",
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "ytd_yoy",
+      "start_year": 2012,
+      "source": "official_release",
+      "note": "民间投资累计同比；与全国数据单独比较"
     }
   ]
 }
