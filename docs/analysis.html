@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="中国与广州经济指标同统计期比较、透明的经济复苏信号评分及广州快消经营研判">
+<title>宏观经济研判 · 全国与广州对比</title>
+<link rel="stylesheet" href="./app.css">
+<link rel="stylesheet" href="./analysis.css">
+</head>
+<body>
+<div class="wrap">
+<header class="analysis-header">
+  <div>
+    <div class="eyebrow">经济监测 · 研究模块</div>
+    <h1>全国与广州 · 经济趋势研判</h1>
+    <div class="sub">同月份、同口径比较 · 复苏信号可解释 · 快消经营提示</div>
+  </div>
+  <div class="headlinks">
+    <a class="nav-link" href="./index.html">查看2000年以来历史库 ↗</a>
+    <span class="pill">仅使用已入库官方记录</span>
+  </div>
+</header>
+<div id="analysisLoading" class="panel">正在读取官方历史数据...</div>
+<main id="analysisMain" hidden>
+  <section class="analysis-top">
+    <div class="panel recovery-panel">
+      <div class="label-title">中国经济复苏信号跟踪</div>
+      <div class="recovery-row">
+        <div class="score-box">
+          <div class="score" id="scoreValue">—</div>
+          <div class="score-suffix">/ 100</div>
+        </div>
+        <div class="score-aside">
+          <div class="signal" id="scoreSignal">—</div>
+          <div class="sub" id="scoreAnchor">—</div>
+          <p id="scoreExplain" class="score-explain"></p>
+        </div>
+      </div>
+      <div class="score-track"><div id="scoreTrack"></div></div>
+      <div class="label-muted" id="scoreCoverage">—</div>
+      <div class="note-tiny">这是基于统计指标变化的<b>自定义监测规则</b>，不是国家统计局官方指数，也不预测GDP或股市。</div>
+    </div>
+    <div class="panel compare-summary">
+      <div class="label-title">广州与全国消费对照</div>
+      <div class="split-values">
+        <div><div class="small-label">广州社零累计同比</div><div class="kpi-big" id="gzRetailVal">—</div></div>
+        <div><div class="small-label">全国社零累计同比</div><div class="kpi-big" id="cnRetailVal">—</div></div>
+      </div>
+      <div id="retailGap" class="gap-output"></div>
+      <p class="label-muted" id="retailCompareDate"></p>
+      <div class="note-tiny">仅显示双方都已公布的同一统计期；比较的是增速差（百分点），不是零售规模差。</div>
+    </div>
+  </section>
+  <section class="panel" id="comparisonPanel">
+    <div class="section-head">
+      <div><h2>全国 vs 广州 · 同口径趋势</h2><div class="sub">时间轴从2000年开始，当前对比仅取两地真实共有的月份</div></div>
+      <div class="compact-controls">
+        <label class="field">指标<select id="compareIndicator"></select></label>
+        <label class="field">起始年份<select id="compareStartYear"></select></label>
+        <label class="field">截止年份<select id="compareEndYear"></select></label>
+      </div>
+    </div>
+    <div id="compareNote" class="fine-note"></div>
+    <div class="legend">
+      <span><i class="legend-dot national"></i>全国</span>
+      <span><i class="legend-dot guangzhou"></i>广州</span>
+    </div>
+    <div id="compareChart" class="dual-chart" aria-live="polite"></div>
+    <div class="section-head" style="margin-top:22px">
+      <h2>同统计期对照明细</h2>
+      <button id="compareExport" class="primary">导出对照 CSV ↓</button>
+    </div>
+    <div class="tablewrap"><table>
+      <thead><tr><th>统计期</th><th>全国同比</th><th>广州同比</th><th>广州 - 全国</th><th>全国来源</th><th>广州来源</th></tr></thead>
+      <tbody id="compareBody"></tbody>
+    </table></div>
+    <p class="note-tiny">若只有1个共同月份，将只显示1个数据点，不补画历史趋势；差额计算不涉及因果推断。</p>
+  </section>
+  <section class="panel">
+    <div class="section-head"><div><h2>复苏信号评分 · 逐项依据</h2><div class="sub">展示每一项的权重、比较月份、边际变化和缺失情况</div></div><span class="pill">规则完全公开</span></div>
+    <div class="tablewrap"><table class="scoring-table">
+      <thead><tr><th>项目 / 权重</th><th>基准统计期</th><th>最新统计期</th><th>变化（百分点）</th><th>边际方向</th><th>计分</th></tr></thead>
+      <tbody id="scoreBody"></tbody>
+    </table></div>
+    <div id="methodDetail" class="methodology"></div>
+  </section>
+  <section class="panel">
+    <div class="section-head"><div><h2>广州快消 · 经营影响观察</h2><div class="sub">用宏观数据提出待验证的业务假设，而非自动预测调味品销量</div></div><span class="pill">经营建议 · 非官方结论</span></div>
+    <div id="adviceGrid" class="advice-grid"></div>
+    <p class="note-tiny" style="margin-top:14px">宏观指标与经销商动销并非一一对应。建议后续接入广州一区终端动销、库存倍数、应收和SKU价盘，以本地数据核验假设。</p>
+  </section>
+  <section class="panel foot">
+    <strong>数据与计算说明</strong>
+    <p>本页直接使用<a href="./data.json">项目历史数据库</a>，逐条记录统计期、数值、政府来源及发布日期（若可追溯）；每日报告更新后网页自动刷新数据。复苏评分每次以最新全国社零月度统计期为锚点，不跨年比较年初累计增速。居民季度收入若仅有一个季度，直接标记为未计分。</p>
+    <p id="analysisUpdated"></p>
+  </section>
+</main>
+</div>
+<script src="./analysis-core.js" defer></script>
+<script src="./analysis.js" defer></script>
+</body></html>
