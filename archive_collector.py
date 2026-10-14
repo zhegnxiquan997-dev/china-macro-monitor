@@ -53,9 +53,12 @@ def number(value):
 
 
 def parse_period(raw):
-    match = MONTH_CODE_RE.match(str(raw).strip())
+    value = str(raw).strip()
+    match = MONTH_CODE_RE.match(value)
     if match:
         return match.group(1) + "-" + match.group(2)
+    if re.fullmatch(r"20\d{2}(?:YY|A)", value):
+        return value[:4]
     return None
 
 
@@ -136,14 +139,15 @@ def setup_session():
 
 def fetch_year(session, metric, year, fetched_at):
     cid, indicator = metric["code"].split(":")
+    annual = metric["frequency"] == "annual"
     request = {
         "cid": cid,
         "indicatorIds": [indicator],
         "daCatalogId": "",
         "das": [{"text": "全国", "value": "000000000000"}],
         "showType": "1",
-        "dts": [f"{year}01MM-{year}12MM"],
-        "rootId": "fc982599aa684be7969d7b90b1bd0e84",
+        "dts": [f"{year}YY-{year}YY"] if annual else [f"{year}01MM-{year}12MM"],
+        "rootId": "" if annual else "fc982599aa684be7969d7b90b1bd0e84",
     }
     response = session.post(API, json=request, timeout=25, headers={
         "Content-Type": "application/json;charset=UTF-8"
@@ -302,7 +306,8 @@ def run(full_requested):
             statuses[mid] = {"status": "official_release_import_pending",
                              "last_error": None, "checked_at": now}
             continue
-        years = range(metric["start_year"], current_year + 1) if full else range(
+        newly_added = not any(r["indicator_id"] == mid for r in archive)
+        years = range(metric["start_year"], current_year + 1) if (full or newly_added) else range(
             max(metric["start_year"], current_year - 2), current_year + 1
         )
         seen = 0
