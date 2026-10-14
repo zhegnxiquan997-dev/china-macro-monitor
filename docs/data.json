@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-14T22:37:39+08:00",
+  "generated_at": "2026-10-14T22:38:47+08:00",
   "history_start_year": 2000,
   "indicators": [
     {
@@ -36642,7 +36642,7 @@
       "last_period": "2026-08",
       "unique_periods": 1,
       "versions": 1,
-      "status": "official_release_import_pending",
+      "status": "official_release_fetched",
       "last_error": null
     },
     "catering": {
@@ -36658,7 +36658,7 @@
       "last_period": "2026-Q2",
       "unique_periods": 1,
       "versions": 1,
-      "status": "official_release_import_pending",
+      "status": "official_release_fetched",
       "last_error": null
     },
     "private_investment": {
@@ -36747,31 +36747,31 @@
       "unique_periods": 13,
       "versions": 13,
       "status": "ok",
-      "last_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+      "last_error": null
     },
     "income_annual_nominal": {
       "first_period": "2013",
       "last_period": "2025",
       "unique_periods": 13,
       "versions": 13,
-      "status": "fetch_failed",
-      "last_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+      "status": "ok",
+      "last_error": null
     },
     "industrial_profit_annual_value": {
       "first_period": "2023",
       "last_period": "2025",
       "unique_periods": 3,
       "versions": 3,
-      "status": "fetch_failed",
-      "last_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+      "status": "ok",
+      "last_error": null
     },
     "private_investment_annual_nominal": {
       "first_period": "2013",
       "last_period": "2025",
       "unique_periods": 13,
       "versions": 13,
-      "status": "fetch_failed",
-      "last_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+      "status": "ok",
+      "last_error": null
     },
     "guangzhou_catering": {
       "first_period": "2026-08",
@@ -36796,86 +36796,88 @@
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 26,
-      "checked_at": "2026-10-14T22:37:39+08:00"
+      "checked_at": "2026-10-14T22:38:47+08:00"
     },
     "retail_ytd": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 29,
-      "checked_at": "2026-10-14T22:37:39+08:00"
+      "checked_at": "2026-10-14T22:38:47+08:00"
     },
     "retail_value": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 26,
-      "checked_at": "2026-10-14T22:37:39+08:00"
+      "checked_at": "2026-10-14T22:38:47+08:00"
     },
     "retail_ytd_value": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 29,
-      "checked_at": "2026-10-14T22:37:39+08:00"
+      "checked_at": "2026-10-14T22:38:47+08:00"
     },
     "services": {
-      "status": "official_release_import_pending",
+      "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-10-14T22:37:39+08:00"
+      "checked_at": "2026-10-14T22:38:47+08:00",
+      "fetched_observations": 3
     },
     "catering": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-10-14T22:37:39+08:00",
+      "checked_at": "2026-10-14T22:38:47+08:00",
       "fetched_observations": 1
     },
     "income": {
-      "status": "official_release_import_pending",
+      "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-10-14T22:37:39+08:00"
+      "checked_at": "2026-10-14T22:38:47+08:00",
+      "fetched_observations": 1
     },
     "private_investment": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 29,
-      "checked_at": "2026-10-14T22:37:39+08:00"
+      "checked_at": "2026-10-14T22:38:47+08:00"
     },
     "real_estate_investment": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 29,
-      "checked_at": "2026-10-14T22:37:39+08:00"
+      "checked_at": "2026-10-14T22:38:47+08:00"
     },
     "real_estate_investment_value": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 29,
-      "checked_at": "2026-10-14T22:37:39+08:00"
+      "checked_at": "2026-10-14T22:38:47+08:00"
     },
     "real_estate_sales": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-10-14T22:37:39+08:00",
+      "checked_at": "2026-10-14T22:38:47+08:00",
       "fetched_observations": 1
     },
     "guangzhou_new_home": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-10-14T22:37:39+08:00"
+      "checked_at": "2026-10-14T22:38:47+08:00"
     },
     "guangzhou_second_home": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-10-14T22:37:39+08:00"
+      "checked_at": "2026-10-14T22:38:47+08:00"
     },
     "industrial_profit": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-10-14T22:37:39+08:00",
+      "checked_at": "2026-10-14T22:38:47+08:00",
       "fetched_observations": 3
     },
     "unemployment": {
@@ -36883,12 +36885,12 @@
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 32,
-      "checked_at": "2026-10-14T22:37:39+08:00"
+      "checked_at": "2026-10-14T22:38:47+08:00"
     },
     "guangzhou_retail": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-10-14T22:37:39+08:00",
+      "checked_at": "2026-10-14T22:38:47+08:00",
       "fetched_observations": 1
     },
     "retail_annual_value": {
@@ -36896,46 +36898,46 @@
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 2,
-      "checked_at": "2026-10-14T22:37:39+08:00"
+      "checked_at": "2026-10-14T22:38:47+08:00"
     },
     "income_annual_value": {
       "status": "ok",
-      "last_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-      "checked_years": 1,
-      "fetched_observations": 1,
-      "checked_at": "2026-10-14T22:37:39+08:00"
+      "last_error": null,
+      "checked_years": 3,
+      "fetched_observations": 2,
+      "checked_at": "2026-10-14T22:38:47+08:00"
     },
     "income_annual_nominal": {
-      "status": "fetch_failed",
-      "last_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-      "checked_years": 0,
-      "fetched_observations": 0,
-      "checked_at": "2026-10-14T22:37:39+08:00"
+      "status": "ok",
+      "last_error": null,
+      "checked_years": 3,
+      "fetched_observations": 2,
+      "checked_at": "2026-10-14T22:38:47+08:00"
     },
     "industrial_profit_annual_value": {
-      "status": "fetch_failed",
-      "last_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-      "checked_years": 0,
-      "fetched_observations": 0,
-      "checked_at": "2026-10-14T22:37:39+08:00"
+      "status": "ok",
+      "last_error": null,
+      "checked_years": 3,
+      "fetched_observations": 2,
+      "checked_at": "2026-10-14T22:38:47+08:00"
     },
     "private_investment_annual_nominal": {
-      "status": "fetch_failed",
-      "last_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-      "checked_years": 0,
-      "fetched_observations": 0,
-      "checked_at": "2026-10-14T22:37:39+08:00"
+      "status": "ok",
+      "last_error": null,
+      "checked_years": 3,
+      "fetched_observations": 2,
+      "checked_at": "2026-10-14T22:38:47+08:00"
     },
     "guangzhou_catering": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-10-14T22:37:39+08:00",
+      "checked_at": "2026-10-14T22:38:47+08:00",
       "fetched_observations": 1
     },
     "guangzhou_private_investment": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-10-14T22:37:39+08:00",
+      "checked_at": "2026-10-14T22:38:47+08:00",
       "fetched_observations": 1
     }
   },
