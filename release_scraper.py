@@ -86,6 +86,10 @@ def period_from_title(title,body,published):
     if m:return f"{m.group(1)}-{int(m.group(2)):02d}"
     mm=YEAR_MONTH.search(title)
     if mm:return f"{mm.group(1)}-{int(mm.group(2)):02d}"
+    # Press conferences often omit the year and lead with "8月份国民经济运行".
+    if "国民经济运行" in title and published:
+        c=re.search(r"1[—–\-－至到]([1-9]|1[0-2])月份?，社会消费商品和服务零售总额",body)
+        if c:return f"{year}-{int(c.group(1)):02d}"
     return None
 
 def parse_article(url,html,catalog,retrieved_at):
@@ -94,7 +98,8 @@ def parse_article(url,html,catalog,retrieved_at):
     from bs4 import BeautifulSoup
     soup=BeautifulSoup(html,"html.parser")
     title_el=soup.find("h1")
-    title=text_normalize(title_el.get_text(" ",strip=True) if title_el else (soup.title.get_text(" ",strip=True) if soup.title else ""))
+    h1_text=title_el.get_text(" ",strip=True) if title_el else ""
+    title=text_normalize(h1_text or (soup.title.get_text(" ",strip=True) if soup.title else ""))
     text=soup.get_text(" ",strip=True)
     normalized=text_normalize(text)
     released=parse_publication_date(text)
@@ -132,7 +137,7 @@ def get_candidate_urls(session):
         try:
             response=session.get(index,timeout=20)
             response.raise_for_status()
-            doc=BeautifulSoup(response.text,"html.parser")
+            doc=BeautifulSoup(response.content,"html.parser")
             n=0
             for a in doc.select("a[href]"):
                 title=text_normalize(a.get_text(" ",strip=True))
@@ -160,10 +165,10 @@ def collect_official_releases(catalog,retrieved_at,session=None):
         try:
             response=session.get(url,timeout=18)
             response.raise_for_status()
-            rows=parse_article(url,response.text,mapping,retrieved_at)
+            rows=parse_article(url,response.content,mapping,retrieved_at)
             if url in PINNED:
                 from bs4 import BeautifulSoup
-                soup=BeautifulSoup(response.text,"html.parser")
+                soup=BeautifulSoup(response.content,"html.parser")
                 titles=[n.get_text(" ",strip=True)[:140] for n in soup.find_all("h1")[:3]]
                 LOG.info("Pinned source diagnostics: url=%s rows=%s title=%r h1=%r body_len=%d sample=%r",
                          url,len(rows),soup.title.get_text(" ",strip=True)[:110] if soup.title else None,
