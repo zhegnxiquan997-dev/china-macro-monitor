@@ -40,6 +40,17 @@ class MacroCollectorTest(unittest.TestCase):
         self.assertEqual(rows[0]["value"], 4.2)
         self.assertIsNone(rows[0]["official_release_date"])
 
+    def test_older_bulletin_cannot_undo_newer_revision(self):
+        old = {"indicator_id": "industrial_profit", "period": "2026-08", "value": 15.7,
+               "official_release_date": "2026-09-28", "retrieved_at": "2026-10-10"}
+        archive, _ = merge_records([], [old])
+        corrected = dict(old, value=16.1, official_release_date="2026-10-11",
+                         retrieved_at="2026-10-12")
+        archive, _ = merge_records(archive, [corrected])
+        archive, changes = merge_records(archive, [old])
+        self.assertEqual(changes, 0)
+        self.assertEqual([r["value"] for r in archive], [15.7, 16.1])
+
     def test_versions_preserved(self):
         base = {"indicator_id": "retail", "period": "2026-08", "value": 2.1,
                 "retrieved_at": "2026-09-15", "official_release_date": None}
