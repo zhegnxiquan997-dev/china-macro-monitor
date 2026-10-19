@@ -17,6 +17,23 @@
     "first_observed_at": "2026-10-14T22:22:49+08:00"
   },
   {
+    "indicator_id": "catering",
+    "period": "2026-09",
+    "value": 2.4,
+    "unit": "%",
+    "kind": "ytd_yoy",
+    "frequency": "monthly",
+    "source_url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261019_1965614.html",
+    "source_title": "2026年1—9月份社会消费品零售总额增长1.1%-国家统计局",
+    "source_indicator": null,
+    "official_release_date": "2026-10-19",
+    "release_date_status": "官方公报页面标注",
+    "retrieved_at": "2026-10-19T16:01:33+08:00",
+    "method": "official_release_scraper",
+    "version": 1,
+    "first_observed_at": "2026-10-19T16:01:33+08:00"
+  },
+  {
     "indicator_id": "guangzhou_catering",
     "period": "2026-03",
     "value": 6.1,
@@ -423,6 +440,23 @@
     "method": "official_release_manual_import",
     "version": 1,
     "first_observed_at": "2026-10-14T22:22:49+08:00"
+  },
+  {
+    "indicator_id": "income",
+    "period": "2026-Q3",
+    "value": 4.4,
+    "unit": "%",
+    "kind": "ytd_real_yoy",
+    "frequency": "quarterly",
+    "source_url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261019_1965612.html",
+    "source_title": "2026年前三季度居民收入和消费支出情况-国家统计局",
+    "source_indicator": null,
+    "official_release_date": "2026-10-19",
+    "release_date_status": "官方公报页面标注",
+    "retrieved_at": "2026-10-19T16:01:33+08:00",
+    "method": "official_release_scraper",
+    "version": 1,
+    "first_observed_at": "2026-10-19T16:01:33+08:00"
   },
   {
     "indicator_id": "income_annual_nominal",
@@ -13853,6 +13887,23 @@
     "method": "official_release_manual_import",
     "version": 1,
     "first_observed_at": "2026-10-14T22:22:49+08:00"
+  },
+  {
+    "indicator_id": "real_estate_sales",
+    "period": "2026-09",
+    "value": -13.2,
+    "unit": "%",
+    "kind": "ytd_yoy",
+    "frequency": "monthly",
+    "source_url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261019_1965615.html",
+    "source_title": "2026年1—9月份全国房地产市场基本情况-国家统计局",
+    "source_indicator": null,
+    "official_release_date": "2026-10-19",
+    "release_date_status": "官方公报页面标注",
+    "retrieved_at": "2026-10-19T16:01:33+08:00",
+    "method": "official_release_scraper",
+    "version": 1,
+    "first_observed_at": "2026-10-19T16:01:33+08:00"
   },
   {
     "indicator_id": "retail",
