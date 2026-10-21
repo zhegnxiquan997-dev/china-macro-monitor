@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-20T15:51:48+08:00",
+  "generated_at": "2026-10-21T15:55:40+08:00",
   "history_start_year": 2000,
   "indicators": [
     {
@@ -426,8 +426,8 @@
     },
     "private_investment": {
       "indicator_id": "private_investment",
-      "period": "2026-08",
-      "value": -10.1,
+      "period": "2026-09",
+      "value": -10.4,
       "unit": "%",
       "frequency": "monthly",
       "kind": "ytd_yoy",
@@ -436,10 +436,10 @@
       "source_indicator": "5129067b149d4ddfbec1ffc478d35bfb:287f55a9520d43a9b3e045860a49fedd",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T21:59:30+08:00",
+      "retrieved_at": "2026-10-21T15:55:40+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T21:59:30+08:00"
+      "first_observed_at": "2026-10-21T15:55:40+08:00"
     },
     "private_investment_annual_nominal": {
       "indicator_id": "private_investment_annual_nominal",
@@ -460,8 +460,8 @@
     },
     "real_estate_investment": {
       "indicator_id": "real_estate_investment",
-      "period": "2026-08",
-      "value": -19.9,
+      "period": "2026-09",
+      "value": -20.6,
       "unit": "%",
       "frequency": "monthly",
       "kind": "ytd_yoy",
@@ -470,15 +470,15 @@
       "source_indicator": "9206137ccf03460daa74b7799e0f3c31:205e08cba8c2409980db58c98da91b6f",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T21:59:30+08:00",
+      "retrieved_at": "2026-10-21T15:55:40+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T21:59:30+08:00"
+      "first_observed_at": "2026-10-21T15:55:40+08:00"
     },
     "real_estate_investment_value": {
       "indicator_id": "real_estate_investment_value",
-      "period": "2026-08",
-      "value": 47978.85,
+      "period": "2026-09",
+      "value": 53363.52,
       "unit": "亿元",
       "frequency": "monthly",
       "kind": "ytd_amount",
@@ -487,10 +487,10 @@
       "source_indicator": "9206137ccf03460daa74b7799e0f3c31:bfb626c0dfa04afab67937c452ca9f50",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T21:59:30+08:00",
+      "retrieved_at": "2026-10-21T15:55:40+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T21:59:30+08:00"
+      "first_observed_at": "2026-10-21T15:55:40+08:00"
     },
     "real_estate_sales": {
       "indicator_id": "real_estate_sales",
@@ -511,8 +511,8 @@
     },
     "retail": {
       "indicator_id": "retail",
-      "period": "2026-08",
-      "value": 0.4,
+      "period": "2026-09",
+      "value": 1.1,
       "unit": "%",
       "frequency": "monthly",
       "kind": "yoy",
@@ -521,10 +521,10 @@
       "source_indicator": "d0cb882c7f27443ab6b3ef9421901961:aaac57d54d2e465d91bc9f3ea1a8618e",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T21:59:30+08:00",
+      "retrieved_at": "2026-10-21T15:55:40+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T21:59:30+08:00"
+      "first_observed_at": "2026-10-21T15:55:40+08:00"
     },
     "retail_annual_value": {
       "indicator_id": "retail_annual_value",
@@ -545,8 +545,8 @@
     },
     "retail_value": {
       "indicator_id": "retail_value",
-      "period": "2026-08",
-      "value": 39824.4,
+      "period": "2026-09",
+      "value": 42432.5,
       "unit": "亿元",
       "frequency": "monthly",
       "kind": "monthly_amount",
@@ -555,14 +555,14 @@
       "source_indicator": "d0cb882c7f27443ab6b3ef9421901961:1142a3a03e9045959e606a21822641ac",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T21:59:30+08:00",
+      "retrieved_at": "2026-10-21T15:55:40+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T21:59:30+08:00"
+      "first_observed_at": "2026-10-21T15:55:40+08:00"
     },
     "retail_ytd": {
       "indicator_id": "retail_ytd",
-      "period": "2026-08",
+      "period": "2026-09",
       "value": 1.1,
       "unit": "%",
       "frequency": "monthly",
@@ -572,15 +572,15 @@
       "source_indicator": "d0cb882c7f27443ab6b3ef9421901961:e3ca151b53d347b78d1e179e5ebf1d33",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T21:59:30+08:00",
+      "retrieved_at": "2026-10-21T15:55:40+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T21:59:30+08:00"
+      "first_observed_at": "2026-10-21T15:55:40+08:00"
     },
     "retail_ytd_value": {
       "indicator_id": "retail_ytd_value",
-      "period": "2026-08",
-      "value": 327568.8,
+      "period": "2026-09",
+      "value": 370001.3,
       "unit": "亿元",
       "frequency": "monthly",
       "kind": "ytd_amount",
@@ -589,10 +589,10 @@
       "source_indicator": "d0cb882c7f27443ab6b3ef9421901961:260a1794443b43dd93a59928b12f38af",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T21:59:30+08:00",
+      "retrieved_at": "2026-10-21T15:55:40+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T21:59:30+08:00"
+      "first_observed_at": "2026-10-21T15:55:40+08:00"
     },
     "services": {
       "indicator_id": "services",
@@ -613,8 +613,8 @@
     },
     "unemployment": {
       "indicator_id": "unemployment",
-      "period": "2026-08",
-      "value": 5.3,
+      "period": "2026-09",
+      "value": 5.2,
       "unit": "%",
       "frequency": "monthly",
       "kind": "rate",
@@ -623,10 +623,10 @@
       "source_indicator": "ee3b7046b390415b9b7745e3d16f6052:3888eac6062945a79c8a27e5f13d4953",
       "official_release_date": null,
       "release_date_status": "未由发布库接口提供",
-      "retrieved_at": "2026-10-14T21:59:30+08:00",
+      "retrieved_at": "2026-10-21T15:55:40+08:00",
       "method": "nbs_new_release_api",
       "version": 1,
-      "first_observed_at": "2026-10-14T21:59:30+08:00"
+      "first_observed_at": "2026-10-21T15:55:40+08:00"
     }
   },
   "history": [
@@ -4318,6 +4318,23 @@
       "method": "nbs_new_release_api",
       "version": 1,
       "first_observed_at": "2026-10-14T21:59:30+08:00"
+    },
+    {
+      "indicator_id": "private_investment",
+      "period": "2026-09",
+      "value": -10.4,
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "ytd_yoy",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "5129067b149d4ddfbec1ffc478d35bfb:287f55a9520d43a9b3e045860a49fedd",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-21T15:55:40+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-21T15:55:40+08:00"
     },
     {
       "indicator_id": "private_investment_annual_nominal",
@@ -9522,6 +9539,23 @@
       "first_observed_at": "2026-10-14T21:59:30+08:00"
     },
     {
+      "indicator_id": "real_estate_investment",
+      "period": "2026-09",
+      "value": -20.6,
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "ytd_yoy",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "9206137ccf03460daa74b7799e0f3c31:205e08cba8c2409980db58c98da91b6f",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-21T15:55:40+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-21T15:55:40+08:00"
+    },
+    {
       "indicator_id": "real_estate_investment_value",
       "period": "2000-02",
       "value": 246.04,
@@ -14503,6 +14537,23 @@
       "first_observed_at": "2026-10-14T21:59:30+08:00"
     },
     {
+      "indicator_id": "real_estate_investment_value",
+      "period": "2026-09",
+      "value": 53363.52,
+      "unit": "亿元",
+      "frequency": "monthly",
+      "kind": "ytd_amount",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "9206137ccf03460daa74b7799e0f3c31:bfb626c0dfa04afab67937c452ca9f50",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-21T15:55:40+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-21T15:55:40+08:00"
+    },
+    {
       "indicator_id": "real_estate_sales",
       "period": "2026-08",
       "value": -12.1,
@@ -19465,6 +19516,23 @@
       "method": "nbs_new_release_api",
       "version": 1,
       "first_observed_at": "2026-10-14T21:59:30+08:00"
+    },
+    {
+      "indicator_id": "retail",
+      "period": "2026-09",
+      "value": 1.1,
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "yoy",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "d0cb882c7f27443ab6b3ef9421901961:aaac57d54d2e465d91bc9f3ea1a8618e",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-21T15:55:40+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-21T15:55:40+08:00"
     },
     {
       "indicator_id": "retail_annual_value",
@@ -24839,6 +24907,23 @@
       "first_observed_at": "2026-10-14T21:59:30+08:00"
     },
     {
+      "indicator_id": "retail_value",
+      "period": "2026-09",
+      "value": 42432.5,
+      "unit": "亿元",
+      "frequency": "monthly",
+      "kind": "monthly_amount",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "d0cb882c7f27443ab6b3ef9421901961:1142a3a03e9045959e606a21822641ac",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-21T15:55:40+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-21T15:55:40+08:00"
+    },
+    {
       "indicator_id": "retail_ytd",
       "period": "2000-01",
       "value": 11.3,
@@ -30022,6 +30107,23 @@
       "method": "nbs_new_release_api",
       "version": 1,
       "first_observed_at": "2026-10-14T21:59:30+08:00"
+    },
+    {
+      "indicator_id": "retail_ytd",
+      "period": "2026-09",
+      "value": 1.1,
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "ytd_yoy",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "d0cb882c7f27443ab6b3ef9421901961:e3ca151b53d347b78d1e179e5ebf1d33",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-21T15:55:40+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-21T15:55:40+08:00"
     },
     {
       "indicator_id": "retail_ytd_value",
@@ -35209,6 +35311,23 @@
       "first_observed_at": "2026-10-14T21:59:30+08:00"
     },
     {
+      "indicator_id": "retail_ytd_value",
+      "period": "2026-09",
+      "value": 370001.3,
+      "unit": "亿元",
+      "frequency": "monthly",
+      "kind": "ytd_amount",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "d0cb882c7f27443ab6b3ef9421901961:260a1794443b43dd93a59928b12f38af",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-21T15:55:40+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-21T15:55:40+08:00"
+    },
+    {
       "indicator_id": "services",
       "period": "2026-08",
       "value": 4.9,
@@ -36992,39 +37111,56 @@
       "method": "nbs_new_release_api",
       "version": 1,
       "first_observed_at": "2026-10-14T21:59:30+08:00"
+    },
+    {
+      "indicator_id": "unemployment",
+      "period": "2026-09",
+      "value": 5.2,
+      "unit": "%",
+      "frequency": "monthly",
+      "kind": "rate",
+      "source_url": "https://data.stats.gov.cn/",
+      "source_title": "国家统计局·国家数据发布库",
+      "source_indicator": "ee3b7046b390415b9b7745e3d16f6052:3888eac6062945a79c8a27e5f13d4953",
+      "official_release_date": null,
+      "release_date_status": "未由发布库接口提供",
+      "retrieved_at": "2026-10-21T15:55:40+08:00",
+      "method": "nbs_new_release_api",
+      "version": 1,
+      "first_observed_at": "2026-10-21T15:55:40+08:00"
     }
   ],
   "revisions": {},
   "coverage": {
     "retail": {
       "first_period": "2000-01",
-      "last_period": "2026-08",
-      "unique_periods": 290,
-      "versions": 290,
+      "last_period": "2026-09",
+      "unique_periods": 291,
+      "versions": 291,
       "status": "ok",
       "last_error": null
     },
     "retail_ytd": {
       "first_period": "2000-01",
-      "last_period": "2026-08",
-      "unique_periods": 305,
-      "versions": 305,
+      "last_period": "2026-09",
+      "unique_periods": 306,
+      "versions": 306,
       "status": "ok",
       "last_error": null
     },
     "retail_value": {
       "first_period": "2000-01",
-      "last_period": "2026-08",
-      "unique_periods": 290,
-      "versions": 290,
+      "last_period": "2026-09",
+      "unique_periods": 291,
+      "versions": 291,
       "status": "ok",
       "last_error": null
     },
     "retail_ytd_value": {
       "first_period": "2000-01",
-      "last_period": "2026-08",
-      "unique_periods": 305,
-      "versions": 305,
+      "last_period": "2026-09",
+      "unique_periods": 306,
+      "versions": 306,
       "status": "ok",
       "last_error": null
     },
@@ -37054,25 +37190,25 @@
     },
     "private_investment": {
       "first_period": "2012-03",
-      "last_period": "2026-08",
-      "unique_periods": 160,
-      "versions": 160,
+      "last_period": "2026-09",
+      "unique_periods": 161,
+      "versions": 161,
       "status": "ok",
       "last_error": null
     },
     "real_estate_investment": {
       "first_period": "2000-02",
-      "last_period": "2026-08",
-      "unique_periods": 293,
-      "versions": 293,
+      "last_period": "2026-09",
+      "unique_periods": 294,
+      "versions": 294,
       "status": "ok",
       "last_error": null
     },
     "real_estate_investment_value": {
       "first_period": "2000-02",
-      "last_period": "2026-08",
-      "unique_periods": 293,
-      "versions": 293,
+      "last_period": "2026-09",
+      "unique_periods": 294,
+      "versions": 294,
       "status": "ok",
       "last_error": null
     },
@@ -37110,9 +37246,9 @@
     },
     "unemployment": {
       "first_period": "2018-01",
-      "last_period": "2026-08",
-      "unique_periods": 104,
-      "versions": 104,
+      "last_period": "2026-09",
+      "unique_periods": 105,
+      "versions": 105,
       "status": "ok",
       "last_error": null
     },
@@ -37186,102 +37322,102 @@
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
-      "fetched_observations": 26,
-      "checked_at": "2026-10-20T15:51:48+08:00"
+      "fetched_observations": 27,
+      "checked_at": "2026-10-21T15:55:40+08:00"
     },
     "retail_ytd": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
-      "fetched_observations": 29,
-      "checked_at": "2026-10-20T15:51:48+08:00"
+      "fetched_observations": 30,
+      "checked_at": "2026-10-21T15:55:40+08:00"
     },
     "retail_value": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
-      "fetched_observations": 26,
-      "checked_at": "2026-10-20T15:51:48+08:00"
+      "fetched_observations": 27,
+      "checked_at": "2026-10-21T15:55:40+08:00"
     },
     "retail_ytd_value": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
-      "fetched_observations": 29,
-      "checked_at": "2026-10-20T15:51:48+08:00"
+      "fetched_observations": 30,
+      "checked_at": "2026-10-21T15:55:40+08:00"
     },
     "services": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-10-20T15:51:48+08:00",
+      "checked_at": "2026-10-21T15:55:40+08:00",
       "fetched_observations": 1
     },
     "catering": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-10-20T15:51:48+08:00",
+      "checked_at": "2026-10-21T15:55:40+08:00",
       "fetched_observations": 2
     },
     "income": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-10-20T15:51:48+08:00",
+      "checked_at": "2026-10-21T15:55:40+08:00",
       "fetched_observations": 2
     },
     "private_investment": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
-      "fetched_observations": 29,
-      "checked_at": "2026-10-20T15:51:48+08:00"
+      "fetched_observations": 30,
+      "checked_at": "2026-10-21T15:55:40+08:00"
     },
     "real_estate_investment": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
-      "fetched_observations": 29,
-      "checked_at": "2026-10-20T15:51:48+08:00"
+      "fetched_observations": 30,
+      "checked_at": "2026-10-21T15:55:40+08:00"
     },
     "real_estate_investment_value": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
-      "fetched_observations": 29,
-      "checked_at": "2026-10-20T15:51:48+08:00"
+      "fetched_observations": 30,
+      "checked_at": "2026-10-21T15:55:40+08:00"
     },
     "real_estate_sales": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-10-20T15:51:48+08:00",
+      "checked_at": "2026-10-21T15:55:40+08:00",
       "fetched_observations": 2
     },
     "guangzhou_new_home": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-10-20T15:51:48+08:00"
+      "checked_at": "2026-10-21T15:55:40+08:00"
     },
     "guangzhou_second_home": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-10-20T15:51:48+08:00"
+      "checked_at": "2026-10-21T15:55:40+08:00"
     },
     "industrial_profit": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-10-20T15:51:48+08:00",
+      "checked_at": "2026-10-21T15:55:40+08:00",
       "fetched_observations": 1
     },
     "unemployment": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
-      "fetched_observations": 32,
-      "checked_at": "2026-10-20T15:51:48+08:00"
+      "fetched_observations": 33,
+      "checked_at": "2026-10-21T15:55:40+08:00"
     },
     "guangzhou_retail": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-10-20T15:51:48+08:00",
+      "checked_at": "2026-10-21T15:55:40+08:00",
       "fetched_observations": 16
     },
     "retail_annual_value": {
@@ -37289,51 +37425,51 @@
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 2,
-      "checked_at": "2026-10-20T15:51:48+08:00"
+      "checked_at": "2026-10-21T15:55:40+08:00"
     },
     "income_annual_value": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 2,
-      "checked_at": "2026-10-20T15:51:48+08:00"
+      "checked_at": "2026-10-21T15:55:40+08:00"
     },
     "income_annual_nominal": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 2,
-      "checked_at": "2026-10-20T15:51:48+08:00"
+      "checked_at": "2026-10-21T15:55:40+08:00"
     },
     "industrial_profit_annual_value": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 2,
-      "checked_at": "2026-10-20T15:51:48+08:00"
+      "checked_at": "2026-10-21T15:55:40+08:00"
     },
     "private_investment_annual_nominal": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 2,
-      "checked_at": "2026-10-20T15:51:48+08:00"
+      "checked_at": "2026-10-21T15:55:40+08:00"
     },
     "guangzhou_catering": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-10-20T15:51:48+08:00",
+      "checked_at": "2026-10-21T15:55:40+08:00",
       "fetched_observations": 6
     },
     "guangzhou_private_investment": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-10-20T15:51:48+08:00",
+      "checked_at": "2026-10-21T15:55:40+08:00",
       "fetched_observations": 1
     }
   },
-  "data_count": 2139,
-  "archive_versions": 2139,
+  "data_count": 2147,
+  "archive_versions": 2147,
   "full_backfill_this_run": false,
   "description": "发布日和统计期分开。历史官方发布日未知时留空，不用抓取日冒充。"
 }

@@ -3689,6 +3689,23 @@
     "first_observed_at": "2026-10-14T21:59:30+08:00"
   },
   {
+    "indicator_id": "private_investment",
+    "period": "2026-09",
+    "value": -10.4,
+    "unit": "%",
+    "frequency": "monthly",
+    "kind": "ytd_yoy",
+    "source_url": "https://data.stats.gov.cn/",
+    "source_title": "国家统计局·国家数据发布库",
+    "source_indicator": "5129067b149d4ddfbec1ffc478d35bfb:287f55a9520d43a9b3e045860a49fedd",
+    "official_release_date": null,
+    "release_date_status": "未由发布库接口提供",
+    "retrieved_at": "2026-10-21T15:55:40+08:00",
+    "method": "nbs_new_release_api",
+    "version": 1,
+    "first_observed_at": "2026-10-21T15:55:40+08:00"
+  },
+  {
     "indicator_id": "private_investment_annual_nominal",
     "period": "2013",
     "value": 20.1,
@@ -8891,6 +8908,23 @@
     "first_observed_at": "2026-10-14T21:59:30+08:00"
   },
   {
+    "indicator_id": "real_estate_investment",
+    "period": "2026-09",
+    "value": -20.6,
+    "unit": "%",
+    "frequency": "monthly",
+    "kind": "ytd_yoy",
+    "source_url": "https://data.stats.gov.cn/",
+    "source_title": "国家统计局·国家数据发布库",
+    "source_indicator": "9206137ccf03460daa74b7799e0f3c31:205e08cba8c2409980db58c98da91b6f",
+    "official_release_date": null,
+    "release_date_status": "未由发布库接口提供",
+    "retrieved_at": "2026-10-21T15:55:40+08:00",
+    "method": "nbs_new_release_api",
+    "version": 1,
+    "first_observed_at": "2026-10-21T15:55:40+08:00"
+  },
+  {
     "indicator_id": "real_estate_investment_value",
     "period": "2000-02",
     "value": 246.04,
@@ -13872,6 +13906,23 @@
     "first_observed_at": "2026-10-14T21:59:30+08:00"
   },
   {
+    "indicator_id": "real_estate_investment_value",
+    "period": "2026-09",
+    "value": 53363.52,
+    "unit": "亿元",
+    "frequency": "monthly",
+    "kind": "ytd_amount",
+    "source_url": "https://data.stats.gov.cn/",
+    "source_title": "国家统计局·国家数据发布库",
+    "source_indicator": "9206137ccf03460daa74b7799e0f3c31:bfb626c0dfa04afab67937c452ca9f50",
+    "official_release_date": null,
+    "release_date_status": "未由发布库接口提供",
+    "retrieved_at": "2026-10-21T15:55:40+08:00",
+    "method": "nbs_new_release_api",
+    "version": 1,
+    "first_observed_at": "2026-10-21T15:55:40+08:00"
+  },
+  {
     "indicator_id": "real_estate_sales",
     "period": "2026-08",
     "value": -12.1,
@@ -18834,6 +18885,23 @@
     "method": "nbs_new_release_api",
     "version": 1,
     "first_observed_at": "2026-10-14T21:59:30+08:00"
+  },
+  {
+    "indicator_id": "retail",
+    "period": "2026-09",
+    "value": 1.1,
+    "unit": "%",
+    "frequency": "monthly",
+    "kind": "yoy",
+    "source_url": "https://data.stats.gov.cn/",
+    "source_title": "国家统计局·国家数据发布库",
+    "source_indicator": "d0cb882c7f27443ab6b3ef9421901961:aaac57d54d2e465d91bc9f3ea1a8618e",
+    "official_release_date": null,
+    "release_date_status": "未由发布库接口提供",
+    "retrieved_at": "2026-10-21T15:55:40+08:00",
+    "method": "nbs_new_release_api",
+    "version": 1,
+    "first_observed_at": "2026-10-21T15:55:40+08:00"
   },
   {
     "indicator_id": "retail_annual_value",
@@ -24208,6 +24276,23 @@
     "first_observed_at": "2026-10-14T21:59:30+08:00"
   },
   {
+    "indicator_id": "retail_value",
+    "period": "2026-09",
+    "value": 42432.5,
+    "unit": "亿元",
+    "frequency": "monthly",
+    "kind": "monthly_amount",
+    "source_url": "https://data.stats.gov.cn/",
+    "source_title": "国家统计局·国家数据发布库",
+    "source_indicator": "d0cb882c7f27443ab6b3ef9421901961:1142a3a03e9045959e606a21822641ac",
+    "official_release_date": null,
+    "release_date_status": "未由发布库接口提供",
+    "retrieved_at": "2026-10-21T15:55:40+08:00",
+    "method": "nbs_new_release_api",
+    "version": 1,
+    "first_observed_at": "2026-10-21T15:55:40+08:00"
+  },
+  {
     "indicator_id": "retail_ytd",
     "period": "2000-01",
     "value": 11.3,
@@ -29391,6 +29476,23 @@
     "method": "nbs_new_release_api",
     "version": 1,
     "first_observed_at": "2026-10-14T21:59:30+08:00"
+  },
+  {
+    "indicator_id": "retail_ytd",
+    "period": "2026-09",
+    "value": 1.1,
+    "unit": "%",
+    "frequency": "monthly",
+    "kind": "ytd_yoy",
+    "source_url": "https://data.stats.gov.cn/",
+    "source_title": "国家统计局·国家数据发布库",
+    "source_indicator": "d0cb882c7f27443ab6b3ef9421901961:e3ca151b53d347b78d1e179e5ebf1d33",
+    "official_release_date": null,
+    "release_date_status": "未由发布库接口提供",
+    "retrieved_at": "2026-10-21T15:55:40+08:00",
+    "method": "nbs_new_release_api",
+    "version": 1,
+    "first_observed_at": "2026-10-21T15:55:40+08:00"
   },
   {
     "indicator_id": "retail_ytd_value",
@@ -34578,6 +34680,23 @@
     "first_observed_at": "2026-10-14T21:59:30+08:00"
   },
   {
+    "indicator_id": "retail_ytd_value",
+    "period": "2026-09",
+    "value": 370001.3,
+    "unit": "亿元",
+    "frequency": "monthly",
+    "kind": "ytd_amount",
+    "source_url": "https://data.stats.gov.cn/",
+    "source_title": "国家统计局·国家数据发布库",
+    "source_indicator": "d0cb882c7f27443ab6b3ef9421901961:260a1794443b43dd93a59928b12f38af",
+    "official_release_date": null,
+    "release_date_status": "未由发布库接口提供",
+    "retrieved_at": "2026-10-21T15:55:40+08:00",
+    "method": "nbs_new_release_api",
+    "version": 1,
+    "first_observed_at": "2026-10-21T15:55:40+08:00"
+  },
+  {
     "indicator_id": "services",
     "period": "2026-08",
     "value": 4.9,
@@ -36361,5 +36480,22 @@
     "method": "nbs_new_release_api",
     "version": 1,
     "first_observed_at": "2026-10-14T21:59:30+08:00"
+  },
+  {
+    "indicator_id": "unemployment",
+    "period": "2026-09",
+    "value": 5.2,
+    "unit": "%",
+    "frequency": "monthly",
+    "kind": "rate",
+    "source_url": "https://data.stats.gov.cn/",
+    "source_title": "国家统计局·国家数据发布库",
+    "source_indicator": "ee3b7046b390415b9b7745e3d16f6052:3888eac6062945a79c8a27e5f13d4953",
+    "official_release_date": null,
+    "release_date_status": "未由发布库接口提供",
+    "retrieved_at": "2026-10-21T15:55:40+08:00",
+    "method": "nbs_new_release_api",
+    "version": 1,
+    "first_observed_at": "2026-10-21T15:55:40+08:00"
   }
 ]
