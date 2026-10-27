@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-26T16:01:57+08:00",
+  "generated_at": "2026-10-27T16:16:03+08:00",
   "history_start_year": 2000,
   "indicators": [
     {
@@ -392,20 +392,20 @@
     },
     "industrial_profit": {
       "indicator_id": "industrial_profit",
-      "period": "2026-08",
-      "value": 15.7,
+      "period": "2026-09",
+      "value": 15.5,
       "unit": "%",
-      "frequency": "monthly",
       "kind": "ytd_yoy",
-      "source_url": "https://www.stats.gov.cn/zwfwck/sjfb/202609/t20260928_1965425.html",
-      "source_title": "2026年1—8月份全国规模以上工业企业利润",
-      "source_indicator": "",
-      "official_release_date": "2026-09-28",
-      "release_date_status": "已核验官方公报",
-      "retrieved_at": "2026-10-14T22:22:49+08:00",
-      "method": "official_release_manual_import",
+      "frequency": "monthly",
+      "source_url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261027_1965697.html",
+      "source_title": "2026年1—9月份全国规模以上工业企业利润增长15.5%-国家统计局",
+      "source_indicator": null,
+      "official_release_date": "2026-10-27",
+      "release_date_status": "官方公报页面标注",
+      "retrieved_at": "2026-10-27T16:16:03+08:00",
+      "method": "official_release_scraper",
       "version": 1,
-      "first_observed_at": "2026-10-14T22:22:49+08:00"
+      "first_observed_at": "2026-10-27T16:16:03+08:00"
     },
     "industrial_profit_annual_value": {
       "indicator_id": "industrial_profit_annual_value",
@@ -1547,6 +1547,23 @@
       "method": "official_release_manual_import",
       "version": 1,
       "first_observed_at": "2026-10-14T22:22:49+08:00"
+    },
+    {
+      "indicator_id": "industrial_profit",
+      "period": "2026-09",
+      "value": 15.5,
+      "unit": "%",
+      "kind": "ytd_yoy",
+      "frequency": "monthly",
+      "source_url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261027_1965697.html",
+      "source_title": "2026年1—9月份全国规模以上工业企业利润增长15.5%-国家统计局",
+      "source_indicator": null,
+      "official_release_date": "2026-10-27",
+      "release_date_status": "官方公报页面标注",
+      "retrieved_at": "2026-10-27T16:16:03+08:00",
+      "method": "official_release_scraper",
+      "version": 1,
+      "first_observed_at": "2026-10-27T16:16:03+08:00"
     },
     {
       "indicator_id": "industrial_profit_annual_value",
@@ -37238,9 +37255,9 @@
     },
     "industrial_profit": {
       "first_period": "2026-08",
-      "last_period": "2026-08",
-      "unique_periods": 1,
-      "versions": 1,
+      "last_period": "2026-09",
+      "unique_periods": 2,
+      "versions": 2,
       "status": "official_release_fetched",
       "last_error": null
     },
@@ -37323,45 +37340,45 @@
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 27,
-      "checked_at": "2026-10-26T16:01:57+08:00"
+      "checked_at": "2026-10-27T16:16:03+08:00"
     },
     "retail_ytd": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 30,
-      "checked_at": "2026-10-26T16:01:57+08:00"
+      "checked_at": "2026-10-27T16:16:03+08:00"
     },
     "retail_value": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 27,
-      "checked_at": "2026-10-26T16:01:57+08:00"
+      "checked_at": "2026-10-27T16:16:03+08:00"
     },
     "retail_ytd_value": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 30,
-      "checked_at": "2026-10-26T16:01:57+08:00"
+      "checked_at": "2026-10-27T16:16:03+08:00"
     },
     "services": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-10-26T16:01:57+08:00",
+      "checked_at": "2026-10-27T16:16:03+08:00",
       "fetched_observations": 1
     },
     "catering": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-10-26T16:01:57+08:00",
+      "checked_at": "2026-10-27T16:16:03+08:00",
       "fetched_observations": 2
     },
     "income": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-10-26T16:01:57+08:00",
+      "checked_at": "2026-10-27T16:16:03+08:00",
       "fetched_observations": 2
     },
     "private_investment": {
@@ -37369,55 +37386,55 @@
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 30,
-      "checked_at": "2026-10-26T16:01:57+08:00"
+      "checked_at": "2026-10-27T16:16:03+08:00"
     },
     "real_estate_investment": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 30,
-      "checked_at": "2026-10-26T16:01:57+08:00"
+      "checked_at": "2026-10-27T16:16:03+08:00"
     },
     "real_estate_investment_value": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 30,
-      "checked_at": "2026-10-26T16:01:57+08:00"
+      "checked_at": "2026-10-27T16:16:03+08:00"
     },
     "real_estate_sales": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-10-26T16:01:57+08:00",
+      "checked_at": "2026-10-27T16:16:03+08:00",
       "fetched_observations": 2
     },
     "guangzhou_new_home": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-10-26T16:01:57+08:00"
+      "checked_at": "2026-10-27T16:16:03+08:00"
     },
     "guangzhou_second_home": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-10-26T16:01:57+08:00"
+      "checked_at": "2026-10-27T16:16:03+08:00"
     },
     "industrial_profit": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-10-26T16:01:57+08:00",
-      "fetched_observations": 1
+      "checked_at": "2026-10-27T16:16:03+08:00",
+      "fetched_observations": 3
     },
     "unemployment": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 33,
-      "checked_at": "2026-10-26T16:01:57+08:00"
+      "checked_at": "2026-10-27T16:16:03+08:00"
     },
     "guangzhou_retail": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-10-26T16:01:57+08:00",
+      "checked_at": "2026-10-27T16:16:03+08:00",
       "fetched_observations": 16
     },
     "retail_annual_value": {
@@ -37425,51 +37442,51 @@
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 2,
-      "checked_at": "2026-10-26T16:01:57+08:00"
+      "checked_at": "2026-10-27T16:16:03+08:00"
     },
     "income_annual_value": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 2,
-      "checked_at": "2026-10-26T16:01:57+08:00"
+      "checked_at": "2026-10-27T16:16:03+08:00"
     },
     "income_annual_nominal": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 2,
-      "checked_at": "2026-10-26T16:01:57+08:00"
+      "checked_at": "2026-10-27T16:16:03+08:00"
     },
     "industrial_profit_annual_value": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 2,
-      "checked_at": "2026-10-26T16:01:57+08:00"
+      "checked_at": "2026-10-27T16:16:03+08:00"
     },
     "private_investment_annual_nominal": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 2,
-      "checked_at": "2026-10-26T16:01:57+08:00"
+      "checked_at": "2026-10-27T16:16:03+08:00"
     },
     "guangzhou_catering": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-10-26T16:01:57+08:00",
+      "checked_at": "2026-10-27T16:16:03+08:00",
       "fetched_observations": 6
     },
     "guangzhou_private_investment": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-10-26T16:01:57+08:00",
+      "checked_at": "2026-10-27T16:16:03+08:00",
       "fetched_observations": 1
     }
   },
-  "data_count": 2147,
-  "archive_versions": 2147,
+  "data_count": 2148,
+  "archive_versions": 2148,
   "full_backfill_this_run": false,
   "description": "发布日和统计期分开。历史官方发布日未知时留空，不用抓取日冒充。"
 }
