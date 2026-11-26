@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-25T19:36:48+08:00",
+  "generated_at": "2026-11-26T19:21:04+08:00",
   "history_start_year": 2000,
   "indicators": [
     {
@@ -37527,45 +37527,45 @@
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 28,
-      "checked_at": "2026-11-25T19:36:48+08:00"
+      "checked_at": "2026-11-26T19:21:04+08:00"
     },
     "retail_ytd": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 31,
-      "checked_at": "2026-11-25T19:36:48+08:00"
+      "checked_at": "2026-11-26T19:21:04+08:00"
     },
     "retail_value": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 28,
-      "checked_at": "2026-11-25T19:36:48+08:00"
+      "checked_at": "2026-11-26T19:21:04+08:00"
     },
     "retail_ytd_value": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 31,
-      "checked_at": "2026-11-25T19:36:48+08:00"
+      "checked_at": "2026-11-26T19:21:04+08:00"
     },
     "services": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-11-25T19:36:48+08:00",
+      "checked_at": "2026-11-26T19:21:04+08:00",
       "fetched_observations": 3
     },
     "catering": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-11-25T19:36:48+08:00",
+      "checked_at": "2026-11-26T19:21:04+08:00",
       "fetched_observations": 3
     },
     "income": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-11-25T19:36:48+08:00",
+      "checked_at": "2026-11-26T19:21:04+08:00",
       "fetched_observations": 1
     },
     "private_investment": {
@@ -37573,42 +37573,42 @@
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 31,
-      "checked_at": "2026-11-25T19:36:48+08:00"
+      "checked_at": "2026-11-26T19:21:04+08:00"
     },
     "real_estate_investment": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 31,
-      "checked_at": "2026-11-25T19:36:48+08:00"
+      "checked_at": "2026-11-26T19:21:04+08:00"
     },
     "real_estate_investment_value": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 31,
-      "checked_at": "2026-11-25T19:36:48+08:00"
+      "checked_at": "2026-11-26T19:21:04+08:00"
     },
     "real_estate_sales": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-11-25T19:36:48+08:00",
+      "checked_at": "2026-11-26T19:21:04+08:00",
       "fetched_observations": 3
     },
     "guangzhou_new_home": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-11-25T19:36:48+08:00"
+      "checked_at": "2026-11-26T19:21:04+08:00"
     },
     "guangzhou_second_home": {
       "status": "official_release_import_pending",
       "last_error": null,
-      "checked_at": "2026-11-25T19:36:48+08:00"
+      "checked_at": "2026-11-26T19:21:04+08:00"
     },
     "industrial_profit": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-11-25T19:36:48+08:00",
+      "checked_at": "2026-11-26T19:21:04+08:00",
       "fetched_observations": 1
     },
     "unemployment": {
@@ -37616,12 +37616,12 @@
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 34,
-      "checked_at": "2026-11-25T19:36:48+08:00"
+      "checked_at": "2026-11-26T19:21:04+08:00"
     },
     "guangzhou_retail": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-11-25T19:36:48+08:00",
+      "checked_at": "2026-11-26T19:21:04+08:00",
       "fetched_observations": 16
     },
     "retail_annual_value": {
@@ -37629,46 +37629,46 @@
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 2,
-      "checked_at": "2026-11-25T19:36:48+08:00"
+      "checked_at": "2026-11-26T19:21:04+08:00"
     },
     "income_annual_value": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 2,
-      "checked_at": "2026-11-25T19:36:48+08:00"
+      "checked_at": "2026-11-26T19:21:04+08:00"
     },
     "income_annual_nominal": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 2,
-      "checked_at": "2026-11-25T19:36:48+08:00"
+      "checked_at": "2026-11-26T19:21:04+08:00"
     },
     "industrial_profit_annual_value": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 2,
-      "checked_at": "2026-11-25T19:36:48+08:00"
+      "checked_at": "2026-11-26T19:21:04+08:00"
     },
     "private_investment_annual_nominal": {
       "status": "ok",
       "last_error": null,
       "checked_years": 3,
       "fetched_observations": 2,
-      "checked_at": "2026-11-25T19:36:48+08:00"
+      "checked_at": "2026-11-26T19:21:04+08:00"
     },
     "guangzhou_catering": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-11-25T19:36:48+08:00",
+      "checked_at": "2026-11-26T19:21:04+08:00",
       "fetched_observations": 6
     },
     "guangzhou_private_investment": {
       "status": "official_release_fetched",
       "last_error": null,
-      "checked_at": "2026-11-25T19:36:48+08:00",
+      "checked_at": "2026-11-26T19:21:04+08:00",
       "fetched_observations": 1
     }
   },
