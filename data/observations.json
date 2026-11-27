@@ -952,6 +952,23 @@
     "first_observed_at": "2026-10-27T16:16:03+08:00"
   },
   {
+    "indicator_id": "industrial_profit",
+    "period": "2026-10",
+    "value": 16.0,
+    "unit": "%",
+    "kind": "ytd_yoy",
+    "frequency": "monthly",
+    "source_url": "https://www.stats.gov.cn/sj/zxfb/202611/t20261127_1965949.html",
+    "source_title": "2026年1—10月份全国规模以上工业企业利润增长16.0%-国家统计局",
+    "source_indicator": null,
+    "official_release_date": "2026-11-27",
+    "release_date_status": "官方公报页面标注",
+    "retrieved_at": "2026-11-27T19:14:57+08:00",
+    "method": "official_release_scraper",
+    "version": 1,
+    "first_observed_at": "2026-11-27T19:14:57+08:00"
+  },
+  {
     "indicator_id": "industrial_profit_annual_value",
     "period": "2023",
     "value": 82897.03,
